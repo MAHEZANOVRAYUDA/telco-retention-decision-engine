@@ -1,0 +1,327 @@
+{
+  "communities": {
+    "0": [
+      "duckdbpyconnection",
+      "exception",
+      "src_data_engineering_quality_gates",
+      "src_data_engineering_quality_gates_py_any",
+      "src_data_engineering_quality_gates_py_path",
+      "src_data_engineering_quality_gates_qualitygateviolation",
+      "src_data_engineering_quality_gates_rationale_1",
+      "src_data_engineering_quality_gates_rationale_24",
+      "src_data_engineering_quality_gates_rationale_29",
+      "src_data_engineering_quality_gates_validate_gold_features",
+      "src_data_engineering_transform_medallion",
+      "src_data_engineering_transform_medallion_get_duckdb_connection",
+      "src_data_engineering_transform_medallion_py_path",
+      "src_data_engineering_transform_medallion_rationale_1",
+      "src_data_engineering_transform_medallion_rationale_108",
+      "src_data_engineering_transform_medallion_rationale_161",
+      "src_data_engineering_transform_medallion_rationale_28",
+      "src_data_engineering_transform_medallion_rationale_40",
+      "src_data_engineering_transform_medallion_run_medallion_pipeline",
+      "src_data_engineering_transform_medallion_transform_bronze_to_silver",
+      "src_data_engineering_transform_medallion_transform_silver_to_gold",
+      "tests_test_quality_gates",
+      "tests_test_quality_gates_get_process_ram_mb",
+      "tests_test_quality_gates_rationale_1",
+      "tests_test_quality_gates_rationale_36",
+      "tests_test_quality_gates_rationale_72",
+      "tests_test_quality_gates_rationale_95",
+      "tests_test_quality_gates_test_ingestion_and_medallion_pipeline",
+      "tests_test_quality_gates_test_quality_gate_detects_duplicates",
+      "tests_test_quality_gates_test_quality_gate_detects_negative_arpu"
+    ],
+    "1": [
+      "src_config",
+      "src_config_rationale_1",
+      "src_decisioning_eligibility",
+      "src_decisioning_eligibility_evaluate_eligibility_matrix",
+      "src_decisioning_eligibility_py_dataframe",
+      "src_decisioning_eligibility_py_ndarray",
+      "src_decisioning_eligibility_rationale_1",
+      "src_decisioning_eligibility_rationale_30",
+      "src_decisioning_stackelberg_optimizer",
+      "src_decisioning_stackelberg_optimizer_rationale_1",
+      "src_modeling_causal_uplift",
+      "src_modeling_causal_uplift_rationale_1",
+      "src_modeling_predictive_risk",
+      "src_modeling_predictive_risk_rationale_1",
+      "tests_test_stackelberg_optimizer",
+      "tests_test_stackelberg_optimizer_get_process_ram_mb",
+      "tests_test_stackelberg_optimizer_rationale_1",
+      "tests_test_stackelberg_optimizer_rationale_45",
+      "tests_test_stackelberg_optimizer_rationale_72",
+      "tests_test_stackelberg_optimizer_rationale_92",
+      "tests_test_stackelberg_optimizer_test_baseline_risk_and_treeshap",
+      "tests_test_stackelberg_optimizer_test_eligibility_and_stackelberg_optimizer",
+      "tests_test_stackelberg_optimizer_test_multi_treatment_causal_uplift"
+    ],
+    "2": [
+      "src_modeling_predictive_risk_baselineriskmodel",
+      "src_modeling_predictive_risk_baselineriskmodel_evaluate",
+      "src_modeling_predictive_risk_baselineriskmodel_explain_drivers",
+      "src_modeling_predictive_risk_baselineriskmodel_fit",
+      "src_modeling_predictive_risk_baselineriskmodel_init",
+      "src_modeling_predictive_risk_baselineriskmodel_predict_proba",
+      "src_modeling_predictive_risk_baselineriskmodel_prepare_features",
+      "src_modeling_predictive_risk_py_any",
+      "src_modeling_predictive_risk_py_dataframe",
+      "src_modeling_predictive_risk_py_ndarray",
+      "src_modeling_predictive_risk_rationale_104",
+      "src_modeling_predictive_risk_rationale_112",
+      "src_modeling_predictive_risk_rationale_123",
+      "src_modeling_predictive_risk_rationale_39",
+      "src_modeling_predictive_risk_rationale_49",
+      "src_modeling_predictive_risk_rationale_56"
+    ],
+    "3": [
+      "src_decisioning_stackelberg_optimizer_py_any",
+      "src_decisioning_stackelberg_optimizer_py_dataframe",
+      "src_decisioning_stackelberg_optimizer_py_ndarray",
+      "src_decisioning_stackelberg_optimizer_rationale_138",
+      "src_decisioning_stackelberg_optimizer_rationale_186",
+      "src_decisioning_stackelberg_optimizer_rationale_27",
+      "src_decisioning_stackelberg_optimizer_rationale_41",
+      "src_decisioning_stackelberg_optimizer_rationale_65",
+      "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer",
+      "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_compute_payoff_matrix",
+      "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_init",
+      "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_solve_highs_core",
+      "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_solve_lagrangian_greedy",
+      "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_solve_milp_highs"
+    ],
+    "4": [
+      "src_modeling_causal_uplift_multitreatmenttlearner",
+      "src_modeling_causal_uplift_multitreatmenttlearner_classify_quadrants",
+      "src_modeling_causal_uplift_multitreatmenttlearner_estimate_cate_and_lcb",
+      "src_modeling_causal_uplift_multitreatmenttlearner_fit",
+      "src_modeling_causal_uplift_multitreatmenttlearner_init",
+      "src_modeling_causal_uplift_multitreatmenttlearner_predict_response_probabilities",
+      "src_modeling_causal_uplift_multitreatmenttlearner_prepare_features",
+      "src_modeling_causal_uplift_py_dataframe",
+      "src_modeling_causal_uplift_py_ndarray",
+      "src_modeling_causal_uplift_rationale_106",
+      "src_modeling_causal_uplift_rationale_155",
+      "src_modeling_causal_uplift_rationale_38",
+      "src_modeling_causal_uplift_rationale_51",
+      "src_modeling_causal_uplift_rationale_95"
+    ],
+    "5": [
+      "fixture",
+      "src_data_engineering_ingest",
+      "src_data_engineering_ingest_download_hf_dataset",
+      "src_data_engineering_ingest_generate_calibrated_rct_telemetry",
+      "src_data_engineering_ingest_ingest_bronze",
+      "src_data_engineering_ingest_py_dataframe",
+      "src_data_engineering_ingest_py_path",
+      "src_data_engineering_ingest_rationale_1",
+      "src_data_engineering_ingest_rationale_131",
+      "src_data_engineering_ingest_rationale_152",
+      "src_data_engineering_ingest_rationale_33",
+      "tests_test_stackelberg_optimizer_rationale_35",
+      "tests_test_stackelberg_optimizer_sample_gold_data"
+    ],
+    "6": [
+      "src_modeling_evaluation",
+      "src_modeling_evaluation_compute_qini_curve",
+      "src_modeling_evaluation_evaluate_policy_comparison",
+      "src_modeling_evaluation_py_any",
+      "src_modeling_evaluation_py_dataframe",
+      "src_modeling_evaluation_py_ndarray",
+      "src_modeling_evaluation_rationale_1",
+      "src_modeling_evaluation_rationale_27",
+      "src_modeling_evaluation_rationale_61"
+    ],
+    "7": [
+      "garuda_nba_experiment",
+      "garuda_nba_experiment_build_design_matrix",
+      "garuda_nba_experiment_compute_auc",
+      "garuda_nba_experiment_compute_psi",
+      "garuda_nba_experiment_fit_logistic_l2",
+      "garuda_nba_experiment_get_peak_ram_mb",
+      "garuda_nba_experiment_py_dataframe",
+      "garuda_nba_experiment_py_ndarray"
+    ],
+    "8": [
+      "garuda_nba_experiment_1",
+      "garuda_nba_experiment_1_build_design_matrix",
+      "garuda_nba_experiment_1_compute_auc",
+      "garuda_nba_experiment_1_compute_psi",
+      "garuda_nba_experiment_1_fit_logistic_l2",
+      "garuda_nba_experiment_1_py_dataframe",
+      "garuda_nba_experiment_1_py_ndarray"
+    ],
+    "9": [
+      "src_data_engineering_init",
+      "src_data_engineering_init_rationale_1"
+    ],
+    "10": [
+      "src_decisioning_init",
+      "src_decisioning_init_rationale_1"
+    ],
+    "11": [
+      "src_init",
+      "src_init_rationale_1"
+    ],
+    "12": [
+      "src_modeling_init",
+      "src_modeling_init_rationale_1"
+    ],
+    "13": [
+      "tests_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11264367816091954,
+    "1": 0.1225296442687747,
+    "2": 0.20833333333333334,
+    "3": 0.1978021978021978,
+    "4": 0.26373626373626374,
+    "5": 0.19230769230769232,
+    "6": 0.25,
+    "7": 0.35714285714285715,
+    "8": 0.42857142857142855,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_modeling_predictive_risk_baselineriskmodel",
+      "label": "BaselineRiskModel",
+      "degree": 11
+    },
+    {
+      "id": "src_modeling_causal_uplift_multitreatmenttlearner",
+      "label": "MultiTreatmentTLearner",
+      "degree": 11
+    },
+    {
+      "id": "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer",
+      "label": "StackelbergBudgetOptimizer",
+      "degree": 9
+    },
+    {
+      "id": "src_data_engineering_quality_gates_validate_gold_features",
+      "label": "validate_gold_features()",
+      "degree": 9
+    },
+    {
+      "id": "tests_test_stackelberg_optimizer_test_eligibility_and_stackelberg_optimizer",
+      "label": "test_eligibility_and_stackelberg_optimizer()",
+      "degree": 8
+    },
+    {
+      "id": "src_data_engineering_quality_gates_qualitygateviolation",
+      "label": "QualityGateViolation",
+      "degree": 7
+    },
+    {
+      "id": "src_data_engineering_transform_medallion_transform_bronze_to_silver",
+      "label": "transform_bronze_to_silver()",
+      "degree": 7
+    },
+    {
+      "id": "src_data_engineering_transform_medallion_transform_silver_to_gold",
+      "label": "transform_silver_to_gold()",
+      "degree": 7
+    },
+    {
+      "id": "tests_test_quality_gates_test_ingestion_and_medallion_pipeline",
+      "label": "test_ingestion_and_medallion_pipeline()",
+      "degree": 7
+    },
+    {
+      "id": "src_data_engineering_ingest_ingest_bronze",
+      "label": "ingest_bronze()",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "test_quality_gate_detects_duplicates()",
+      "target": "QualityGateViolation",
+      "source_files": [
+        "tests/test_quality_gates.py",
+        "src/data_engineering/quality_gates.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "test_quality_gate_detects_negative_arpu()",
+      "target": "QualityGateViolation",
+      "source_files": [
+        "tests/test_quality_gates.py",
+        "src/data_engineering/quality_gates.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "test_baseline_risk_and_treeshap()",
+      "target": "BaselineRiskModel",
+      "source_files": [
+        "tests/test_stackelberg_optimizer.py",
+        "src/modeling/predictive_risk.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "test_eligibility_and_stackelberg_optimizer()",
+      "target": "BaselineRiskModel",
+      "source_files": [
+        "tests/test_stackelberg_optimizer.py",
+        "src/modeling/predictive_risk.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "test_eligibility_and_stackelberg_optimizer()",
+      "target": "StackelbergBudgetOptimizer",
+      "source_files": [
+        "tests/test_stackelberg_optimizer.py",
+        "src/decisioning/stackelberg_optimizer.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `BaselineRiskModel` connect `Community 2` to `Community 1`?",
+      "why": "High betweenness centrality (0.158) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `StackelbergBudgetOptimizer` connect `Community 3` to `Community 1`?",
+      "why": "High betweenness centrality (0.140) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `MultiTreatmentTLearner` connect `Community 4` to `Community 1`?",
+      "why": "High betweenness centrality (0.140) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11264367816091954 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1225296442687747 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
