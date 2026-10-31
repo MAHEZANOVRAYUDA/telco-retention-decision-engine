@@ -3,8 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
+# C extensions & OS files
 *.so
+.DS_Store
+Thumbs.db
 
 # Distribution / packaging
 .Python
@@ -34,12 +36,17 @@ env/
 .coverage
 htmlcov/
 
-# Local database & state
+# Local databases, caches & state
 mlflow.db
 .ipynb_checkpoints/
 data/bronze/temp_hf.parquet
+graphify-out/cache/
+graphify-out/.graphify_*
+.system_generated/
+*.tmp
+tmp_chrome/
 
 # Environment secrets
 .env
 .env.local
-
+.streamlit/secrets.toml

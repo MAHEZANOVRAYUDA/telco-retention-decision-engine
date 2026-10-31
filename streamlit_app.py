@@ -233,3 +233,4 @@ with tab_about:
         3. **Solusi TRDE:** Memadukan **DuckDB Medallion Lakehouse**, **Multi-Treatment CATE Uplift (T-Learner + 90% LCB)**, **SciPy HiGHS Knapsack MILP**, dan **Pydantic v2 `DecisionPacket`** dengan agen retensi LLM.
         """
     )
+
