@@ -160,6 +160,30 @@
       "source_location": "L49"
     },
     {
+      "id": "src_data_engineering_ingest_download_hf_dataset",
+      "label": "download_hf_dataset()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "code",
+      "norm_label": "download_hf_dataset()",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L130"
+    },
+    {
+      "id": "src_data_engineering_ingest_ingest_bronze",
+      "label": "ingest_bronze()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "code",
+      "norm_label": "ingest_bronze()",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L147"
+    },
+    {
       "id": "src_data_engineering_quality_gates_validate_gold_features",
       "label": "validate_gold_features()",
       "_callable": true,
@@ -268,6 +292,18 @@
       "source_location": "L95"
     },
     {
+      "id": "src_data_engineering_ingest_generate_calibrated_rct_telemetry",
+      "label": "generate_calibrated_rct_telemetry()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "code",
+      "norm_label": "generate_calibrated_rct_telemetry()",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L32"
+    },
+    {
       "id": "src_decisioning_eligibility_evaluate_eligibility_matrix",
       "label": "evaluate_eligibility_matrix()",
       "_callable": true,
@@ -316,6 +352,18 @@
       "source_location": "L17"
     },
     {
+      "id": "tests_test_stackelberg_optimizer_sample_gold_data",
+      "label": "sample_gold_data()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "code",
+      "norm_label": "sample_gold_data()",
+      "source_file": "tests/test_stackelberg_optimizer.py",
+      "source_location": "L34"
+    },
+    {
       "id": "tests_test_stackelberg_optimizer_test_baseline_risk_and_treeshap",
       "label": "test_baseline_risk_and_treeshap()",
       "_callable": true,
@@ -338,54 +386,6 @@
       "norm_label": "test_eligibility_and_stackelberg_optimizer()",
       "source_file": "tests/test_stackelberg_optimizer.py",
       "source_location": "L91"
-    },
-    {
-      "id": "src_data_engineering_ingest_download_hf_dataset",
-      "label": "download_hf_dataset()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "download_hf_dataset()",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L130"
-    },
-    {
-      "id": "src_data_engineering_ingest_generate_calibrated_rct_telemetry",
-      "label": "generate_calibrated_rct_telemetry()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "generate_calibrated_rct_telemetry()",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L32"
-    },
-    {
-      "id": "src_data_engineering_ingest_ingest_bronze",
-      "label": "ingest_bronze()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "ingest_bronze()",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L147"
-    },
-    {
-      "id": "tests_test_stackelberg_optimizer_sample_gold_data",
-      "label": "sample_gold_data()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "sample_gold_data()",
-      "source_file": "tests/test_stackelberg_optimizer.py",
-      "source_location": "L34"
     },
     {
       "id": "src_modeling_predictive_risk_baselineriskmodel_evaluate",
@@ -506,6 +506,18 @@
       "norm_label": "test_ui_backend_endpoints_functional()",
       "source_file": "tests/test_ui_and_endpoints.py",
       "source_location": "L64"
+    },
+    {
+      "id": "tests_test_decision_contract_api_client",
+      "label": "api_client()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "api_client",
+      "file_type": "code",
+      "norm_label": "api_client()",
+      "source_file": "tests/test_decision_contract.py",
+      "source_location": "L25"
     },
     {
       "id": "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_compute_payoff_matrix",
@@ -841,7 +853,19 @@
       "file_type": "code",
       "norm_label": "decide_single_subscriber()",
       "source_file": "src/api/app.py",
-      "source_location": "L155"
+      "source_location": "L161"
+    },
+    {
+      "id": "src_api_app_favicon",
+      "label": "favicon()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "favicon()",
+      "source_file": "src/api/app.py",
+      "source_location": "L134"
     },
     {
       "id": "src_api_app_get_drift_metrics",
@@ -853,7 +877,7 @@
       "file_type": "code",
       "norm_label": "get_drift_metrics()",
       "source_file": "src/api/app.py",
-      "source_location": "L291"
+      "source_location": "L297"
     },
     {
       "id": "src_api_app_get_ram_usage_mb",
@@ -877,7 +901,7 @@
       "file_type": "code",
       "norm_label": "health_check()",
       "source_file": "src/api/app.py",
-      "source_location": "L134"
+      "source_location": "L140"
     },
     {
       "id": "src_api_app_lifespan",
@@ -901,7 +925,7 @@
       "file_type": "code",
       "norm_label": "optimize_cohort()",
       "source_file": "src/api/app.py",
-      "source_location": "L254"
+      "source_location": "L260"
     },
     {
       "id": "src_api_app_serve_dashboard",
@@ -914,18 +938,6 @@
       "norm_label": "serve_dashboard()",
       "source_file": "src/api/app.py",
       "source_location": "L124"
-    },
-    {
-      "id": "tests_test_decision_contract_api_client",
-      "label": "api_client()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "api_client()",
-      "source_file": "tests/test_decision_contract.py",
-      "source_location": "L25"
     },
     {
       "id": "tests_test_decision_contract_test_agent_deterministic_fallback_message",
@@ -1117,6 +1129,28 @@
       "source_location": "L1"
     },
     {
+      "id": "src_data_engineering_ingest",
+      "label": "ingest.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "code",
+      "norm_label": "ingest.py",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_data_engineering_ingest_py_path",
+      "label": "Path",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "code",
+      "norm_label": "path",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "src_data_engineering_quality_gates",
       "label": "quality_gates.py",
       "_origin": "ast",
@@ -1192,6 +1226,39 @@
       "norm_label": "garuda-nba system configuration & resource ceiling parameters. strictly aligned...",
       "source_file": "src/config.py",
       "source_location": "L1"
+    },
+    {
+      "id": "src_data_engineering_ingest_rationale_1",
+      "label": "Data Ingestion Module for GARUDA-NBA. Fetches the public Telco Customer Churn\u2026",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "rationale",
+      "norm_label": "data ingestion module for garuda-nba. fetches the public telco customer churn...",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_data_engineering_ingest_rationale_131",
+      "label": "Attempt downloading raw Parquet dataset from Hugging Face.",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "rationale",
+      "norm_label": "attempt downloading raw parquet dataset from hugging face.",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L131"
+    },
+    {
+      "id": "src_data_engineering_ingest_rationale_152",
+      "label": "Ingest Bronze Parquet dataset with Zstandard compression. Tries public HF\u2026",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "config.py",
+      "file_type": "rationale",
+      "norm_label": "ingest bronze parquet dataset with zstandard compression. tries public hf...",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L152"
     },
     {
       "id": "src_data_engineering_quality_gates_rationale_1",
@@ -1326,6 +1393,17 @@
       "source_location": "L96"
     },
     {
+      "id": "src_data_engineering_ingest_py_dataframe",
+      "label": "DataFrame",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "code",
+      "norm_label": "dataframe",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "src_decisioning_eligibility",
       "label": "eligibility.py",
       "_origin": "ast",
@@ -1357,17 +1435,6 @@
       "norm_label": "ndarray",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "src_modeling_causal_uplift",
-      "label": "causal_uplift.py",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "code",
-      "norm_label": "causal_uplift.py",
-      "source_file": "src/modeling/causal_uplift.py",
-      "source_location": "L1"
     },
     {
       "id": "src_modeling_evaluation",
@@ -1414,17 +1481,6 @@
       "source_location": ""
     },
     {
-      "id": "src_modeling_predictive_risk",
-      "label": "predictive_risk.py",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "code",
-      "norm_label": "predictive_risk.py",
-      "source_file": "src/modeling/predictive_risk.py",
-      "source_location": "L1"
-    },
-    {
       "id": "tests_test_stackelberg_optimizer",
       "label": "test_stackelberg_optimizer.py",
       "_origin": "ast",
@@ -1434,6 +1490,28 @@
       "norm_label": "test_stackelberg_optimizer.py",
       "source_file": "tests/test_stackelberg_optimizer.py",
       "source_location": "L1"
+    },
+    {
+      "id": "tests_test_stackelberg_optimizer_py_fixture",
+      "label": "fixture",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "code",
+      "norm_label": "fixture",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_data_engineering_ingest_rationale_33",
+      "label": "Generate calibrated multi-treatment RCT telco telemetry. Mirrors production\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "rationale",
+      "norm_label": "generate calibrated multi-treatment rct telco telemetry. mirrors production...",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L33"
     },
     {
       "id": "src_decisioning_eligibility_rationale_1",
@@ -1456,17 +1534,6 @@
       "norm_label": "evaluate eligibility mask (n x k) and audit reasons for all subscribers....",
       "source_file": "src/decisioning/eligibility.py",
       "source_location": "L30"
-    },
-    {
-      "id": "src_modeling_causal_uplift_rationale_1",
-      "label": "Multi-Treatment Causal Uplift Engine (T-Learner) with Conformal/Bootstrap LCB.\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "rationale",
-      "norm_label": "multi-treatment causal uplift engine (t-learner) with conformal/bootstrap lcb....",
-      "source_file": "src/modeling/causal_uplift.py",
-      "source_location": "L1"
     },
     {
       "id": "src_modeling_evaluation_rationale_1",
@@ -1502,17 +1569,6 @@
       "source_location": "L61"
     },
     {
-      "id": "src_modeling_predictive_risk_rationale_1",
-      "label": "Baseline Churn Risk Classifier & TreeSHAP Feature Attribution. Uses LightGBM\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "rationale",
-      "norm_label": "baseline churn risk classifier & treeshap feature attribution. uses lightgbm...",
-      "source_file": "src/modeling/predictive_risk.py",
-      "source_location": "L1"
-    },
-    {
       "id": "tests_test_stackelberg_optimizer_rationale_1",
       "label": "Unit & Integration Tests for Predictive Risk, Causal Uplift & Stackelberg\u2026",
       "_origin": "ast",
@@ -1522,6 +1578,17 @@
       "norm_label": "unit & integration tests for predictive risk, causal uplift & stackelberg...",
       "source_file": "tests/test_stackelberg_optimizer.py",
       "source_location": "L1"
+    },
+    {
+      "id": "tests_test_stackelberg_optimizer_rationale_35",
+      "label": "Generate consistent 3,000-subscriber cohort for rapid testing.",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "rationale",
+      "norm_label": "generate consistent 3,000-subscriber cohort for rapid testing.",
+      "source_file": "tests/test_stackelberg_optimizer.py",
+      "source_location": "L35"
     },
     {
       "id": "tests_test_stackelberg_optimizer_rationale_45",
@@ -1848,7 +1915,7 @@
       "node_kind": "heading",
       "norm_label": "1.1 why traditional churn models fail in production (first-principles analysis)",
       "source_file": "prd.md",
-      "source_location": "L10"
+      "source_location": "L9"
     },
     {
       "id": "prd_1_2_solusi_yang_dibangun_garuda_nba",
@@ -1860,7 +1927,7 @@
       "node_kind": "heading",
       "norm_label": "1.2 solusi yang dibangun: `garuda-nba`",
       "source_file": "prd.md",
-      "source_location": "L17"
+      "source_location": "L16"
     },
     {
       "id": "prd_1_executive_summary_first_principles_problem_statement",
@@ -1872,19 +1939,19 @@
       "node_kind": "heading",
       "norm_label": "1. executive summary & first-principles problem statement",
       "source_file": "prd.md",
-      "source_location": "L8"
+      "source_location": "L7"
     },
     {
-      "id": "prd_2_pemetaan_nilai_jual_untuk_3_role_target_multi_role_portfolio_leverage",
-      "label": "2. Pemetaan Nilai Jual untuk 3 Role Target (Multi-Role Portfolio Leverage)",
+      "id": "prd_2_pemetaan_kemampuan_sistem_terhadap_tiga_tantangan_utama_core_architecture_pillars",
+      "label": "2. Pemetaan Kemampuan Sistem terhadap Tiga Tantangan Utama (Core Architecture Pillars)",
       "_origin": "ast",
       "community": 15,
       "community_name": "Product Requirements Document (PRD): GARUDA-NBA",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "2. pemetaan nilai jual untuk 3 role target (multi-role portfolio leverage)",
+      "norm_label": "2. pemetaan kemampuan sistem terhadap tiga tantangan utama (core architecture pillars)",
       "source_file": "prd.md",
-      "source_location": "L24"
+      "source_location": "L23"
     },
     {
       "id": "prd_3_1_opsi_dataset_publik_pilih_salah_satu_atau_mode_hybrid",
@@ -1896,7 +1963,7 @@
       "node_kind": "heading",
       "norm_label": "3.1 opsi dataset publik (pilih salah satu atau mode hybrid)",
       "source_file": "prd.md",
-      "source_location": "L38"
+      "source_location": "L37"
     },
     {
       "id": "prd_3_2_referensi_arsitektur_pustaka_standar_industri",
@@ -1908,7 +1975,7 @@
       "node_kind": "heading",
       "norm_label": "3.2 referensi arsitektur & pustaka standar industri",
       "source_file": "prd.md",
-      "source_location": "L46"
+      "source_location": "L45"
     },
     {
       "id": "prd_3_kurasi_dataset_publik_referensi_arsitektur_100_gratis_terverifikasi",
@@ -1920,7 +1987,7 @@
       "node_kind": "heading",
       "norm_label": "3. kurasi dataset publik & referensi arsitektur (100% gratis & terverifikasi)",
       "source_file": "prd.md",
-      "source_location": "L34"
+      "source_location": "L33"
     },
     {
       "id": "prd_4_spesifikasi_fungsional_functional_requirements",
@@ -1932,7 +1999,7 @@
       "node_kind": "heading",
       "norm_label": "4. spesifikasi fungsional (functional requirements)",
       "source_file": "prd.md",
-      "source_location": "L51"
+      "source_location": "L50"
     },
     {
       "id": "prd_5_non_functional_requirements_nfr_standar_laptop_ram_8_gb",
@@ -1944,7 +2011,7 @@
       "node_kind": "heading",
       "norm_label": "5. non-functional requirements (nfr) \u2014 standar laptop ram 8 gb",
       "source_file": "prd.md",
-      "source_location": "L84"
+      "source_location": "L83"
     },
     {
       "id": "prd_6_metrik_keberhasilan_analytical_business_success_metrics",
@@ -1956,7 +2023,7 @@
       "node_kind": "heading",
       "norm_label": "6. metrik keberhasilan (analytical & business success metrics)",
       "source_file": "prd.md",
-      "source_location": "L93"
+      "source_location": "L92"
     },
     {
       "id": "prd_fr_01_data_engineering_point_in_time_feature_pipeline",
@@ -1968,7 +2035,7 @@
       "node_kind": "heading",
       "norm_label": "fr-01: data engineering & point-in-time feature pipeline",
       "source_file": "prd.md",
-      "source_location": "L53"
+      "source_location": "L52"
     },
     {
       "id": "prd_fr_02_multi_output_predictive_causal_uplift_modeling",
@@ -1980,7 +2047,7 @@
       "node_kind": "heading",
       "norm_label": "fr-02: multi-output predictive & causal uplift modeling",
       "source_file": "prd.md",
-      "source_location": "L58"
+      "source_location": "L57"
     },
     {
       "id": "prd_fr_03_game_theoretic_prescriptive_optimizer_next_best_action",
@@ -1992,7 +2059,7 @@
       "node_kind": "heading",
       "norm_label": "fr-03: game-theoretic prescriptive optimizer (next-best-action)",
       "source_file": "prd.md",
-      "source_location": "L70"
+      "source_location": "L69"
     },
     {
       "id": "prd_fr_04_safe_agentic_workflow_consumption_model_to_agent_pattern",
@@ -2004,7 +2071,7 @@
       "node_kind": "heading",
       "norm_label": "fr-04: safe agentic workflow consumption (`model-to-agent pattern`)",
       "source_file": "prd.md",
-      "source_location": "L76"
+      "source_location": "L75"
     },
     {
       "id": "prd_fr_05_mlops_drift_monitoring_retraining_governance",
@@ -2016,7 +2083,7 @@
       "node_kind": "heading",
       "norm_label": "fr-05: mlops drift monitoring & retraining governance",
       "source_file": "prd.md",
-      "source_location": "L80"
+      "source_location": "L79"
     },
     {
       "id": "prd_product_requirements_document_prd_garuda_nba",
@@ -2139,14 +2206,14 @@
       "source_location": "L96"
     },
     {
-      "id": "tasks_plan_tahap_4_mlops_drift_monitoring_mlflow_sqlite_portfolio_polish",
-      "label": "Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Portfolio Polish",
+      "id": "tasks_plan_tahap_4_mlops_drift_monitoring_mlflow_sqlite_production_hardening",
+      "label": "Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Production Hardening",
       "_origin": "ast",
       "community": 16,
       "community_name": "3. Phase-by-Phase Task Breakdown",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "tahap 4: mlops drift monitoring, mlflow sqlite & portfolio polish",
+      "norm_label": "tahap 4: mlops drift monitoring, mlflow sqlite & production hardening",
       "source_file": "tasks/plan.md",
       "source_location": "L109"
     },
@@ -2199,14 +2266,14 @@
       "source_location": "L30"
     },
     {
-      "id": "antigravity_playbook_3_cara_menjual_proyek_ini_di_cv_interview_3_sudut_pandang_role",
-      "label": "3. Cara Menjual Proyek Ini di CV & Interview (3 Sudut Pandang Role)",
+      "id": "antigravity_playbook_3_ringkasan_evaluasi_dampak_bisnis_rekayasa_sistem_executive_summary",
+      "label": "3. Ringkasan Evaluasi Dampak Bisnis & Rekayasa Sistem (Executive Summary)",
       "_origin": "ast",
       "community": 17,
       "community_name": "2. Urutan Prompt Bertahap untuk Agen Antigravity (Step-by-Step Prompts)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "3. cara menjual proyek ini di cv & interview (3 sudut pandang role)",
+      "norm_label": "3. ringkasan evaluasi dampak bisnis & rekayasa sistem (executive summary)",
       "source_file": "antigravity_playbook.md",
       "source_location": "L96"
     },
@@ -2283,103 +2350,100 @@
       "source_location": "L84"
     },
     {
-      "id": "src_data_engineering_ingest",
-      "label": "ingest.py",
+      "id": "constraints",
+      "label": "CONSTRAINTS.md",
       "_origin": "ast",
       "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "ingest.py",
-      "source_file": "src/data_engineering/ingest.py",
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "constraints.md",
+      "source_file": "CONSTRAINTS.md",
       "source_location": "L1"
     },
     {
-      "id": "src_data_engineering_ingest_py_dataframe",
-      "label": "DataFrame",
+      "id": "constraints_1_floor_always_enforced_non_negotiable",
+      "label": "1. Floor (Always Enforced, Non-Negotiable)",
       "_origin": "ast",
       "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "dataframe",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. floor (always enforced, non-negotiable)",
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L5"
     },
     {
-      "id": "src_data_engineering_ingest_py_path",
-      "label": "Path",
+      "id": "constraints_2_hard_computational_memory_constraints_ramah_laptop_8_gb_ram",
+      "label": "2. Hard Computational & Memory Constraints (Ramah Laptop 8 GB RAM)",
       "_origin": "ast",
       "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "path",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. hard computational & memory constraints (ramah laptop 8 gb ram)",
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L13"
     },
     {
-      "id": "tests_test_stackelberg_optimizer_py_fixture",
-      "label": "fixture",
+      "id": "constraints_3_data_integrity_domain_quality_gates",
+      "label": "3. Data Integrity & Domain Quality Gates",
       "_origin": "ast",
       "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "code",
-      "norm_label": "fixture",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. data integrity & domain quality gates",
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L23"
     },
     {
-      "id": "src_data_engineering_ingest_rationale_1",
-      "label": "Data Ingestion Module for GARUDA-NBA. Fetches the public Telco Customer Churn\u2026",
+      "id": "constraints_4_tone_narrative_positioning_standards",
+      "label": "4. Tone, Narrative & Positioning Standards",
       "_origin": "ast",
       "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "rationale",
-      "norm_label": "data ingestion module for garuda-nba. fetches the public telco customer churn...",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_data_engineering_ingest_rationale_131",
-      "label": "Attempt downloading raw Parquet dataset from Hugging Face.",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "rationale",
-      "norm_label": "attempt downloading raw parquet dataset from hugging face.",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L131"
-    },
-    {
-      "id": "src_data_engineering_ingest_rationale_152",
-      "label": "Ingest Bronze Parquet dataset with Zstandard compression. Tries public HF\u2026",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "rationale",
-      "norm_label": "ingest bronze parquet dataset with zstandard compression. tries public hf...",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L152"
-    },
-    {
-      "id": "src_data_engineering_ingest_rationale_33",
-      "label": "Generate calibrated multi-treatment RCT telco telemetry. Mirrors production\u2026",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "rationale",
-      "norm_label": "generate calibrated multi-treatment rct telco telemetry. mirrors production...",
-      "source_file": "src/data_engineering/ingest.py",
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. tone, narrative & positioning standards",
+      "source_file": "CONSTRAINTS.md",
       "source_location": "L33"
     },
     {
-      "id": "tests_test_stackelberg_optimizer_rationale_35",
-      "label": "Generate consistent 3,000-subscriber cohort for rapid testing.",
+      "id": "constraints_5_visual_hierarchy_frontend_ui_ux_standards",
+      "label": "5. Visual Hierarchy & Frontend UI/UX Standards",
       "_origin": "ast",
       "community": 18,
-      "community_name": "ingest_bronze",
-      "file_type": "rationale",
-      "norm_label": "generate consistent 3,000-subscriber cohort for rapid testing.",
-      "source_file": "tests/test_stackelberg_optimizer.py",
-      "source_location": "L35"
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. visual hierarchy & frontend ui/ux standards",
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "constraints_6_verification_test_suite_matrix",
+      "label": "6. Verification & Test Suite Matrix",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. verification & test suite matrix",
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L49"
+    },
+    {
+      "id": "constraints_constraints_garuda_nba",
+      "label": "Constraints (garuda-nba)",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "Constraints (garuda-nba)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "constraints (garuda-nba)",
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L1"
     },
     {
       "id": "src_agentic_init",
@@ -2401,6 +2465,17 @@
       "file_type": "rationale",
       "norm_label": "agentic retention & consumption layer for garuda-nba.",
       "source_file": "src/agentic/__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_modeling_predictive_risk",
+      "label": "predictive_risk.py",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "BaselineRiskModel",
+      "file_type": "code",
+      "norm_label": "predictive_risk.py",
+      "source_file": "src/modeling/predictive_risk.py",
       "source_location": "L1"
     },
     {
@@ -2435,6 +2510,17 @@
       "norm_label": "ndarray",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "src_modeling_predictive_risk_rationale_1",
+      "label": "Baseline Churn Risk Classifier & TreeSHAP Feature Attribution. Uses LightGBM\u2026",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "BaselineRiskModel",
+      "file_type": "rationale",
+      "norm_label": "baseline churn risk classifier & treeshap feature attribution. uses lightgbm...",
+      "source_file": "src/modeling/predictive_risk.py",
+      "source_location": "L1"
     },
     {
       "id": "src_modeling_predictive_risk_rationale_104",
@@ -2633,14 +2719,14 @@
       "source_location": "L134"
     },
     {
-      "id": "readme_7_cara_menjual_proyek_ini_di_cv_interview_3_sudut_pandang_role",
-      "label": "7. Cara Menjual Proyek Ini di CV & Interview (3 Sudut Pandang Role)",
+      "id": "readme_7_tiga_pilar_rekayasa_sistem_three_core_engineering_pillars",
+      "label": "7. Tiga Pilar Rekayasa Sistem (Three Core Engineering Pillars)",
       "_origin": "ast",
       "community": 22,
       "community_name": "GARUDA-NBA: Game-Theoretic Autonomous Retention, Uplift & Decisioning Architecture",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "7. cara menjual proyek ini di cv & interview (3 sudut pandang role)",
+      "norm_label": "7. tiga pilar rekayasa sistem (three core engineering pillars)",
       "source_file": "README.md",
       "source_location": "L147"
     },
@@ -2654,7 +2740,7 @@
       "node_kind": "heading",
       "norm_label": "8. panduan menjalankan sistem (quick start)",
       "source_file": "README.md",
-      "source_location": "L157"
+      "source_location": "L159"
     },
     {
       "id": "readme_deterministic_policy_fallback_100_offline_resilience",
@@ -2690,7 +2776,7 @@
       "node_kind": "heading",
       "norm_label": "instalasi & eksekusi cepat",
       "source_file": "README.md",
-      "source_location": "L163"
+      "source_location": "L165"
     },
     {
       "id": "readme_persyaratan_sistem",
@@ -2702,7 +2788,7 @@
       "node_kind": "heading",
       "norm_label": "persyaratan sistem",
       "source_file": "README.md",
-      "source_location": "L159"
+      "source_location": "L161"
     },
     {
       "id": "src_monitoring_init",
@@ -2791,6 +2877,28 @@
       "norm_label": "test full pipeline interaction from ui perspectives.",
       "source_file": "tests/test_ui_and_endpoints.py",
       "source_location": "L65"
+    },
+    {
+      "id": "tests_test_decision_contract_py_fixture",
+      "label": "fixture",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "api_client",
+      "file_type": "code",
+      "norm_label": "fixture",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tests_test_decision_contract_rationale_26",
+      "label": "Create FastAPI test client with lifespan context.",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "api_client",
+      "file_type": "rationale",
+      "norm_label": "create fastapi test client with lifespan context.",
+      "source_file": "tests/test_decision_contract.py",
+      "source_location": "L26"
     },
     {
       "id": "src_decisioning_stackelberg_optimizer",
@@ -2903,6 +3011,17 @@
       "source_location": "L65"
     },
     {
+      "id": "src_modeling_causal_uplift",
+      "label": "causal_uplift.py",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MultiTreatmentTLearner",
+      "file_type": "code",
+      "norm_label": "causal_uplift.py",
+      "source_file": "src/modeling/causal_uplift.py",
+      "source_location": "L1"
+    },
+    {
       "id": "src_modeling_causal_uplift_py_dataframe",
       "label": "DataFrame",
       "_origin": "ast",
@@ -2923,6 +3042,17 @@
       "norm_label": "ndarray",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "src_modeling_causal_uplift_rationale_1",
+      "label": "Multi-Treatment Causal Uplift Engine (T-Learner) with Conformal/Bootstrap LCB.\u2026",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "MultiTreatmentTLearner",
+      "file_type": "rationale",
+      "norm_label": "multi-treatment causal uplift engine (t-learner) with conformal/bootstrap lcb....",
+      "source_file": "src/modeling/causal_uplift.py",
+      "source_location": "L1"
     },
     {
       "id": "src_modeling_causal_uplift_rationale_106",
@@ -3288,17 +3418,6 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_decision_contract_py_fixture",
-      "label": "fixture",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "fixture",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "src_agentic_retention_agent_rationale_1",
       "label": "Autonomous Retention Copilot Agent. Consumes validated DecisionPackets,\u2026",
       "_origin": "ast",
@@ -3465,6 +3584,17 @@
     },
     {
       "id": "src_api_app_rationale_135",
+      "label": "Return 204 No Content for browser favicon requests.",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "return 204 no content for browser favicon requests.",
+      "source_file": "src/api/app.py",
+      "source_location": "L135"
+    },
+    {
+      "id": "src_api_app_rationale_141",
       "label": "System health, hardware budget status, and model readiness.",
       "_origin": "ast",
       "community": 6,
@@ -3472,10 +3602,10 @@
       "file_type": "rationale",
       "norm_label": "system health, hardware budget status, and model readiness.",
       "source_file": "src/api/app.py",
-      "source_location": "L135"
+      "source_location": "L141"
     },
     {
-      "id": "src_api_app_rationale_156",
+      "id": "src_api_app_rationale_162",
       "label": "Compute individual prescriptive retention decision and agent payload. Latencies\u2026",
       "_origin": "ast",
       "community": 6,
@@ -3483,10 +3613,10 @@
       "file_type": "rationale",
       "norm_label": "compute individual prescriptive retention decision and agent payload. latencies...",
       "source_file": "src/api/app.py",
-      "source_location": "L156"
+      "source_location": "L162"
     },
     {
-      "id": "src_api_app_rationale_255",
+      "id": "src_api_app_rationale_261",
       "label": "Solve Global Stackelberg Knapsack MILP on cohort.",
       "_origin": "ast",
       "community": 6,
@@ -3494,10 +3624,10 @@
       "file_type": "rationale",
       "norm_label": "solve global stackelberg knapsack milp on cohort.",
       "source_file": "src/api/app.py",
-      "source_location": "L255"
+      "source_location": "L261"
     },
     {
-      "id": "src_api_app_rationale_292",
+      "id": "src_api_app_rationale_298",
       "label": "Compute feature & uplift distribution stability (PSI & KS-test).",
       "_origin": "ast",
       "community": 6,
@@ -3505,7 +3635,7 @@
       "file_type": "rationale",
       "norm_label": "compute feature & uplift distribution stability (psi & ks-test).",
       "source_file": "src/api/app.py",
-      "source_location": "L292"
+      "source_location": "L298"
     },
     {
       "id": "src_api_app_rationale_72",
@@ -3550,17 +3680,6 @@
       "norm_label": "test full fastapi service endpoints.",
       "source_file": "tests/test_decision_contract.py",
       "source_location": "L152"
-    },
-    {
-      "id": "tests_test_decision_contract_rationale_26",
-      "label": "Create FastAPI test client with lifespan context.",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "create fastapi test client with lifespan context.",
-      "source_file": "tests/test_decision_contract.py",
-      "source_location": "L26"
     },
     {
       "id": "tests_test_decision_contract_rationale_32",
@@ -3755,7 +3874,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L194",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
@@ -3767,7 +3886,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L136",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -3815,7 +3934,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L272",
+      "source_location": "L278",
       "weight": 1.0
     },
     {
@@ -4511,23 +4630,11 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/api/app.py",
-      "source_location": "L154",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_get_drift_metrics",
-      "target": "get",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "decorator",
-      "source_file": "src/api/app.py",
-      "source_location": "L290",
-      "weight": 1.0
-    },
-    {
-      "source": "src_api_app_health_check",
+      "source": "src_api_app_favicon",
       "target": "get",
       "relation": "references",
       "_origin": "ast",
@@ -4539,6 +4646,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_api_app_get_drift_metrics",
+      "target": "get",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "src/api/app.py",
+      "source_location": "L296",
+      "weight": 1.0
+    },
+    {
+      "source": "src_api_app_health_check",
+      "target": "get",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "src/api/app.py",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
       "source": "src_api_app_optimize_cohort",
       "target": "post",
       "relation": "references",
@@ -4547,7 +4678,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/api/app.py",
-      "source_location": "L253",
+      "source_location": "L259",
       "weight": 1.0
     },
     {
@@ -6476,13 +6607,90 @@
     },
     {
       "source": "antigravity_playbook_antigravity_execution_playbook_building_garuda_nba_on_an_8_gb_ram_laptop",
-      "target": "antigravity_playbook_3_cara_menjual_proyek_ini_di_cv_interview_3_sudut_pandang_role",
+      "target": "antigravity_playbook_3_ringkasan_evaluasi_dampak_bisnis_rekayasa_sistem_executive_summary",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "antigravity_playbook.md",
       "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints",
+      "target": "constraints_constraints_garuda_nba",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints_constraints_garuda_nba",
+      "target": "constraints_2_hard_computational_memory_constraints_ramah_laptop_8_gb_ram",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints_constraints_garuda_nba",
+      "target": "constraints_3_data_integrity_domain_quality_gates",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints_constraints_garuda_nba",
+      "target": "constraints_4_tone_narrative_positioning_standards",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints_constraints_garuda_nba",
+      "target": "constraints_5_visual_hierarchy_frontend_ui_ux_standards",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints_constraints_garuda_nba",
+      "target": "constraints_6_verification_test_suite_matrix",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "constraints_constraints_garuda_nba",
+      "target": "constraints_1_floor_always_enforced_non_negotiable",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONSTRAINTS.md",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -6773,24 +6981,24 @@
     },
     {
       "source": "prd_1_executive_summary_first_principles_problem_statement",
-      "target": "prd_1_1_why_traditional_churn_models_fail_in_production_first_principles_analysis",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "prd.md",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "prd_1_executive_summary_first_principles_problem_statement",
       "target": "prd_1_2_solusi_yang_dibangun_garuda_nba",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L17",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "prd_1_executive_summary_first_principles_problem_statement",
+      "target": "prd_1_1_why_traditional_churn_models_fail_in_production_first_principles_analysis",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "prd.md",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -6801,7 +7009,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -6812,7 +7020,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L46",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -6823,7 +7031,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L53",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -6834,7 +7042,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L58",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -6845,7 +7053,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L70",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -6856,7 +7064,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L76",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -6867,18 +7075,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L80",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
       "source": "prd_product_requirements_document_prd_garuda_nba",
-      "target": "prd_2_pemetaan_nilai_jual_untuk_3_role_target_multi_role_portfolio_leverage",
+      "target": "prd_2_pemetaan_kemampuan_sistem_terhadap_tiga_tantangan_utama_core_architecture_pillars",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -6889,7 +7097,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L34",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -6900,7 +7108,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L51",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -6911,7 +7119,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -6922,7 +7130,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L84",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -6933,7 +7141,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "prd.md",
-      "source_location": "L93",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -6966,7 +7174,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L159",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -6977,7 +7185,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L163",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -7004,7 +7212,7 @@
     },
     {
       "source": "readme_garuda_nba_game_theoretic_autonomous_retention_uplift_decisioning_architecture",
-      "target": "readme_7_cara_menjual_proyek_ini_di_cv_interview_3_sudut_pandang_role",
+      "target": "readme_7_tiga_pilar_rekayasa_sistem_three_core_engineering_pillars",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7032,7 +7240,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L157",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -7158,7 +7366,7 @@
     },
     {
       "source": "src_api_app",
-      "target": "src_api_app_health_check",
+      "target": "src_api_app_favicon",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7169,13 +7377,24 @@
     },
     {
       "source": "src_api_app",
+      "target": "src_api_app_health_check",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/api/app.py",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "src_api_app",
       "target": "src_api_app_decide_single_subscriber",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L155",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -7186,7 +7405,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L254",
+      "source_location": "L260",
       "weight": 1.0
     },
     {
@@ -7197,7 +7416,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L291",
+      "source_location": "L297",
       "weight": 1.0
     },
     {
@@ -7455,7 +7674,7 @@
     },
     {
       "source": "tasks_plan_3_phase_by_phase_task_breakdown",
-      "target": "tasks_plan_tahap_4_mlops_drift_monitoring_mlflow_sqlite_portfolio_polish",
+      "target": "tasks_plan_tahap_4_mlops_drift_monitoring_mlflow_sqlite_production_hardening",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8324,7 +8543,7 @@
     },
     {
       "source": "src_api_app_rationale_135",
-      "target": "src_api_app_health_check",
+      "target": "src_api_app_favicon",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8334,36 +8553,47 @@
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_156",
+      "source": "src_api_app_rationale_141",
+      "target": "src_api_app_health_check",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/api/app.py",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "src_api_app_rationale_162",
       "target": "src_api_app_decide_single_subscriber",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L156",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_255",
+      "source": "src_api_app_rationale_261",
       "target": "src_api_app_optimize_cohort",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L255",
+      "source_location": "L261",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_292",
+      "source": "src_api_app_rationale_298",
       "target": "src_api_app_get_drift_metrics",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L292",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -9200,7 +9430,7 @@
       "confidence_score": 0.95,
       "context": "parameter_type",
       "source_file": "src/api/app.py",
-      "source_location": "L155",
+      "source_location": "L161",
       "weight": 0.8
     },
     {
@@ -9212,7 +9442,7 @@
       "confidence_score": 0.95,
       "context": "parameter_type",
       "source_file": "src/api/app.py",
-      "source_location": "L254",
+      "source_location": "L260",
       "weight": 0.8
     },
     {
@@ -9245,7 +9475,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L166",
+      "source_location": "L172",
       "weight": 0.8
     },
     {
@@ -9256,7 +9486,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L167",
+      "source_location": "L173",
       "weight": 0.8
     },
     {
@@ -9267,7 +9497,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L168",
+      "source_location": "L174",
       "weight": 0.8
     },
     {
@@ -9278,7 +9508,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L221",
+      "source_location": "L227",
       "weight": 0.8
     },
     {
@@ -9289,7 +9519,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L227",
+      "source_location": "L233",
       "weight": 0.8
     },
     {
@@ -9344,7 +9574,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L257",
+      "source_location": "L263",
       "weight": 0.8
     },
     {
@@ -9355,7 +9585,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L258",
+      "source_location": "L264",
       "weight": 0.8
     },
     {
@@ -9366,7 +9596,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L277",
+      "source_location": "L283",
       "weight": 0.8
     },
     {
@@ -9393,5 +9623,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c16d30eec3e02e6f626b60dc9206773ae41b75d8"
+  "built_at_commit": "395800e75efe147e14c0ad7e9923a711adfe4ca7"
 }

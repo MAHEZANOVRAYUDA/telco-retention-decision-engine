@@ -6,7 +6,7 @@
 ## 1. Arsitektur Sistem End-to-End & Anggaran Memori 8 GB RAM
 
 ### 1.1 Mengapa Arsitektur Ini Mengalahkan Stack Big Data Tradisional di Laptop 8 GB
-Kandidat umumnya gagal mengeksekusi proyek *Data Engineering + AI* di laptop 8 GB karena meniru tumpukan berbasis JVM (Apache Spark + Kafka + Airflow + PostgreSQL di Docker) yang langsung menghabiskan 5,5 GB RAM hanya untuk *idle daemon*. Dari **First Principles**, throughput pemrosesan data diukur dari **efisiensi vektorisasi CPU (SIMD) dan kompresi kolumnar (Apache Parquet)**, bukan dari banyaknya container yang berjalan.
+Implementasi rekayasa data analitik dan AI pada perangkat komputasi lokal (8 GB RAM) sering kali terbebani oleh tumpukan berbasis JVM (Apache Spark + Kafka + PostgreSQL di Docker) yang langsung menghabiskan 5,5 GB RAM hanya untuk *idle daemon*. Dari **First Principles**, throughput pemrosesan data diukur dari **efisiensi vektorisasi CPU (SIMD) dan kompresi kolumnar (Apache Parquet)**, bukan dari banyaknya container yang berjalan.
 
 | Komponen Arsitektur | Pilihan Teknologi `GARUDA-NBA` | Alokasi RAM Maksimum | Alasan Teknis (First-Principles Justification) |
 | :--- | :--- | :--- | :--- |

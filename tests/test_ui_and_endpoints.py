@@ -94,3 +94,4 @@ def test_ui_backend_endpoints_functional(client):
     d_data = d_res.json()
     assert d_data["decision_packet"]["subscriber_id"] == "IOH-SUB-015004"
     assert d_data["agent_response"]["guardrail_passed"] is True
+

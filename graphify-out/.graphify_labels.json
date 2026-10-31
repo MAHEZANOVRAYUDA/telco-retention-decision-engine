@@ -17,11 +17,12 @@
   "15": "Product Requirements Document (PRD): GARUDA-NBA",
   "16": "3. Phase-by-Phase Task Breakdown",
   "17": "2. Urutan Prompt Bertahap untuk Agen Antigravity (Step-by-Step Prompts)",
-  "18": "ingest_bronze",
+  "18": "Constraints (garuda-nba)",
   "19": "agentic/__init__.py",
   "20": "api/__init__.py",
   "21": "todo.md",
   "22": "GARUDA-NBA: Game-Theoretic Autonomous Retention, Uplift & Decisioning Architecture",
   "23": "monitoring/__init__.py",
-  "24": "test_ui_and_endpoints.py"
+  "24": "test_ui_and_endpoints.py",
+  "25": "api_client"
 }

@@ -6,9 +6,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code Style: Anti-AI-Slop](https://img.shields.io/badge/Aesthetics-Swiss_Editorial-slate.svg)](https://github.com)
 
-**Author:** Maheza Novrayuda ([GitHub](https://github.com/MAHEZANOVRAYUDA) · [Portfolio](https://portofolio-maheza-novrayuda.vercel.app) · [LinkedIn](https://www.linkedin.com/in/mahezanovrayuda/))  
-**Target Industry Benchmark:** Telecommunications & Digital Ecosystems (Indosat Ooredoo Hutchison / IOH, Telkomsel, XLSmart, GoTo Financial)  
-**Target Roles Covered:** AI/ML Engineer · Data Scientist · Data Engineer  
+**Author:** Maheza Novrayuda ([GitHub](https://github.com/MAHEZANOVRAYUDA) · [LinkedIn](https://www.linkedin.com/in/mahezanovrayuda/))  
+**Domain Scope:** Telecommunications & Digital Subscription Ecosystems  
+**Architecture Style:** Modular Monolith with Clean Hexagonal Boundaries (Lakehouse $\to$ Causal ML $\to$ Knapsack Solver $\to$ Agentic API)  
 
 ---
 
@@ -144,13 +144,15 @@ Sistem dilengkapi dengan pemantauan pergeseran distribusi fitur dan skor uplift:
 
 ---
 
-## 7. Cara Menjual Proyek Ini di CV & Interview (3 Sudut Pandang Role)
+## 7. Tiga Pilar Rekayasa Sistem (Three Core Engineering Pillars)
 
-| Posisi yang Dilamar | Poin Penjualan di CV & Wawancara | Bukti Kompetensi Nyata di Repositori |
+Sistem `GARUDA-NBA` dirancang dengan memadukan tiga pilar rekayasa produksi secara kohesif:
+
+| Pilar Rekayasa | Fokus Masalah Riil yang Diselesaikan | Implementasi Teknis & Solusi Produksi |
 | :--- | :--- | :--- |
-| **Data Scientist** | • Causal Uplift Modeling (T-Learner CATE) & Kurva Qini / AUUC<br>• Stackelberg Leader-Follower Game & SciPy HiGHS MILP Knapsack<br>• Atribusi Nilai Shapley (TreeSHAP) & 90% Lower Confidence Bound | Membuktikan transisi dari sekadar pemodel prediktif pasif menjadi perancang kebijakan preskriptif yang mengoptimalkan *Expected Monetary Value* (IDR). |
-| **AI / ML Engineer** | • Inferensi latensi rendah (< 35 ms) via FastAPI & LightGBM<br>• Kontrak ketat Model-to-Agent (`DecisionPacket` Pydantic v2)<br>• MLOps Drift Governance (PSI & KS-test) + Local MLflow Tracking | Membuktikan kesiapan mengindustrialisasi sistem ML ke production factory dan mengintegrasikan model ke downstream LLM agent secara deterministik. |
-| **Data Engineer** | • Local-First Data Lakehouse Medallion (*Bronze-Silver-Gold*) DuckDB<br>• Point-in-Time Feature Engineering (Zero Target Leakage)<br>• Kontrak Kualitas Data Otomatis (0 duplikasi, non-negative ARPU) | Membuktikan keahlian SQL analitik performa tinggi, penyimpanan kolumnar Parquet (Zstd), dan optimasi memori ekstrem (< 400 MB RAM). |
+| **1. Preskriptif & Causal Inference** | Mengatasi kegagalan model churn biner yang salah sasaran pada segmen *Sure Things* dan *Sleeping Dogs*, serta ketiadaan optimasi di bawah anggaran terbatas. | Estimasi CATE Multi-Treatment (T-Learner), Conformal 90% Lower Confidence Bound (LCB), Atribusi TreeSHAP kooperatif, dan optimasi Multi-Choice Knapsack via SciPy HiGHS MILP. |
+| **2. Production MLOps & Agentic Serving** | Menjembatani jurang antara model prediktif statistik dan agen otomatisasi hilir tanpa risiko halusinasi atau degradasi distribusi data. | Kontrak skema ketat Pydantic v2 (`DecisionPacket`), inferensi latensi rendah (< 35 ms) via FastAPI, fallback deterministik saat offline, dan deteksi pergeseran data otomatis (PSI & KS-test). |
+| **3. High-Efficiency Lakehouse Data Engineering** | Mencegah bottleneck memori akibat tumpukan JVM berat (Spark/Kafka) pada infrastruktur terbatas serta mencegah kebocoran target masa depan. | Arsitektur Medallion (*Bronze-Silver-Gold*) in-process menggunakan DuckDB SQL dan Apache Parquet (Zstd), point-in-time feature engineering, serta quality gates deterministik. |
 
 ---
 

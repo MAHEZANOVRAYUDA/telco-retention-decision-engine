@@ -33,7 +33,7 @@
   - [x] Run `pytest tests/test_decision_contract.py` (4/4 passed, total suite 10/10 passed)
   - [x] Update graphify knowledge graph (`graphify-out/graph.json`: 261 nodes, 404 edges, 22 communities)
 
-- [x] Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Portfolio Polish
+- [x] Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Production Hardening
   - [x] Create `src/monitoring/drift_detector.py` (PSI & KS-test drift detector with `RETRAIN_REQUIRED` signal)
   - [x] Create `src/pipeline.py` & integrate MLflow SQLite tracking (`sqlite:///mlflow.db`)
   - [x] Create `Makefile` (`setup`, `pipeline`, `test`, `serve`, `clean`)

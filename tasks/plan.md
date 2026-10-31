@@ -106,7 +106,7 @@ flowchart TD
   - FastAPI endpoints return valid schemas with response time < 35 ms.
   - `pytest tests/test_decision_contract.py` passes 100%.
 
-### Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Portfolio Polish
+### Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Production Hardening
 - **Goal:** Implement Population Stability Index (PSI) and Kolmogorov-Smirnov test drift detector with automatic `RETRAIN_REQUIRED` signal when $\text{PSI} \ge 0.25$, integrate local SQLite MLflow tracking, build Makefile, and write an executive-level README.md.
 - **Files Touched:**
   - `src/monitoring/drift_detector.py`

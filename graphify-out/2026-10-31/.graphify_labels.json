@@ -1,11 +1,11 @@
 {
-  "0": "test_quality_gates.py",
+  "0": "config.py",
   "1": "test_stackelberg_optimizer.py",
   "2": "BaselineRiskModel",
   "3": "StackelbergBudgetOptimizer",
   "4": "MultiTreatmentTLearner",
   "5": "pipeline.py",
-  "6": "RetentionAgent",
+  "6": "app.py",
   "7": "garuda_nba_experiment.py",
   "8": "garuda_nba_experiment (1).py",
   "9": "data_engineering/__init__.py",
@@ -17,10 +17,11 @@
   "15": "Product Requirements Document (PRD): GARUDA-NBA",
   "16": "3. Phase-by-Phase Task Breakdown",
   "17": "2. Urutan Prompt Bertahap untuk Agen Antigravity (Step-by-Step Prompts)",
-  "18": "app.py",
+  "18": "ingest_bronze",
   "19": "agentic/__init__.py",
   "20": "api/__init__.py",
   "21": "todo.md",
   "22": "GARUDA-NBA: Game-Theoretic Autonomous Retention, Uplift & Decisioning Architecture",
-  "23": "monitoring/__init__.py"
+  "23": "monitoring/__init__.py",
+  "24": "test_ui_and_endpoints.py"
 }

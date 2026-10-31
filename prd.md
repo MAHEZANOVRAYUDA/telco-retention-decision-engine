@@ -1,9 +1,8 @@
 # Product Requirements Document (PRD): GARUDA-NBA
 **Project Codename:** `garuda-nba` (Game-Theoretic Autonomous Retention, Uplift & Decisioning Architecture — Next-Best-Action Engine)  
-**Author:** Maheza Novrayuda ([GitHub](https://github.com/MAHEZANOVRAYUDA) | [Portfolio](https://portofolio-maheza-novrayuda.vercel.app) | [LinkedIn](https://www.linkedin.com/in/mahezanovrayuda/))  
-**Target Roles Covered:** AI/ML Engineer · Data Scientist · Data Engineer  
-**Target Industry Benchmark:** Telecommunications & Digital Ecosystem (Indosat Ooredoo Hutchison / IOH, Telkomsel, XLSmart, GoTo Financial)  
-**Hardware Constraint Profile:** Strict 8 GB RAM Local-First Execution (< 1.8 GB Peak RSS Memory) · 100% Free & Open-Source Stack
+**Author:** Maheza Novrayuda ([GitHub](https://github.com/MAHEZANOVRAYUDA) | [LinkedIn](https://www.linkedin.com/in/mahezanovrayuda/))  
+**Domain Scope:** Telecommunications & Subscription Ecosystem Analytics  
+**Hardware Constraint Profile:** Strict 8 GB RAM Local-First Execution (< 1.5 GB Peak RSS Memory) · 100% Free & Open-Source Stack
 
 ## 1. Executive Summary & First-Principles Problem Statement
 
@@ -21,15 +20,15 @@ Sebagian besar proyek *Data Science* tingkat universitas berhenti pada pelatihan
 - **Stackelberg Game-Theoretic Budget Optimizer:** Menyelesaikan *Mixed-Integer Linear Programming* (`scipy.optimize.milp`) untuk mengalokasikan kuota data, diskon paket, atau prioritas *Quality of Service* (QoS) jaringan yang memaksimalkan *Net Incremental Retained Value* (IDR) di bawah batasan budget kampanye.
 - **Model-to-Agent Consumption & Observability Layer:** Menyajikan output model terstruktur (`DecisionPacket` Pydantic v2) yang dikonsumsi secara aman oleh *Agentic Retention Workflow* (Groq LPU / Gemini Flash API dengan *deterministic fallback*) serta dilengkapi deteksi pergeseran distribusi data (*Population Stability Index* / PSI & Kolmogorov-Smirnov Drift Monitor).
 
-## 2. Pemetaan Nilai Jual untuk 3 Role Target (Multi-Role Portfolio Leverage)
+## 2. Pemetaan Kemampuan Sistem terhadap Tiga Tantangan Utama (Core Architecture Pillars)
 
-Proyek ini dirancang secara strategis agar satu repositori *flagship* dapat memvalidasi kompetensi inti untuk tiga posisi sekaligus:
+Arsitektur `GARUDA-NBA` dirancang untuk memecahkan tiga tantangan teknis mendasar pada sistem retensi digital:
 
-| Posisi yang Dilamar | Komponen `GARUDA-NBA` yang Ditonjolkan di CV & Interview | Bukti Kompetensi Setara Industri |
+| Pilar Arsitektur | Tantangan Riil yang Dihadapi | Solusi Teknis & Kontrak Rekayasa |
 | :--- | :--- | :--- |
-| **Data Scientist** | • Causal Uplift Modeling (T-Learner / X-Learner) & evaluasi Qini / AUUC<br>• Formulasi *Stackelberg Game* & optimasi *Expected Value* (IDR)<br>• Atribusi Shapley (*TreeSHAP*) & *Uncertainty Quantification* | Membuktikan kemampuan mengubah masalah bisnis menjadi hipotesis kausal, *experimentation*, dan model preskriptif yang terhubung langsung ke ekonomi intervensi (*intervention economics*). |
-| **AI / ML Engineer** | • Inferensi *low-latency* (< 25 ms p95) via FastAPI & ONNX/LightGBM<br>• Kontrak *Model-to-Agent* (`DecisionPacket` JSON Schema) + *Guardrails*<br>• MLflow Registry, *Drift Detection* (PSI/KS), & *Auto-Retraining Trigger* | Membuktikan kesiapan mengindustrialisasi model ke produksi, menjaga reliabilitas sistem, dan mengintegrasikan model prediktif ke *Agentic AI Factory*. |
-| **Data Engineer** | • Pipeline Medallion (*Bronze-Silver-Gold*) berbasis **DuckDB** & **dbt-duckdb**<br>• *Point-in-Time Correct Feature Engineering* (mencegah *data leakage*)<br>• Validasi kualitas data otomatis (*Schema & Distribution Contracts*) | Membuktikan penguasaan SQL analitik skala besar, pemodelan *Data Warehouse / Lakehouse* modern, dan efisiensi memori ekstrem pada format kolumnar Parquet. |
+| **Preskriptif & Causal ML** | Model klasifikasi biner menargetkan pelanggan salah sasaran (*Sure Things* & *Sleeping Dogs*). | CATE Multi-Treatment (T-Learner), Conformal 90% LCB, Atribusi TreeSHAP, dan optimasi Multi-Choice Knapsack via SciPy HiGHS MILP. |
+| **Agentic & Low-Latency Serving** | Sistem otomasi hilir rentan terhadap halusinasi skor dan drift distribusi data di produksi. | Kontrak ketat Pydantic v2 (`DecisionPacket`), inferensi latensi rendah (< 35 ms) via FastAPI, fallback deterministik saat offline, dan deteksi PSI/KS-test. |
+| **High-Efficiency Lakehouse** | Tumpukan JVM berat (Spark/Kafka) membebani infrastruktur lokal dan sering membocorkan data target. | Pipeline Medallion (*Bronze-Silver-Gold*) berbasis DuckDB SQL dan Parquet (Zstd) dengan *point-in-time correctness* dan validasi kualitas data otomatis. |
 
 ## 3. Kurasi Dataset Publik & Referensi Arsitektur (100% Gratis & Terverifikasi)
 

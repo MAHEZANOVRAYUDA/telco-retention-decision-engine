@@ -16,7 +16,7 @@ from typing import Any, Dict, Optional
 
 import numpy as np
 import pandas as pd
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 
@@ -130,6 +130,12 @@ def serve_dashboard():
         return HTMLResponse(content=f.read(), status_code=200)
 
 
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon():
+    """Return 204 No Content for browser favicon requests."""
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
+
+
 @app.get("/v1/health")
 def health_check():
     """System health, hardware budget status, and model readiness."""
@@ -220,8 +226,8 @@ def decide_single_subscriber(payload: SubscriberFeatureInput):
     raw_drivers = risk_model.explain_drivers(df_single, top_k=3)[0]
     top_drivers = [FeatureDriver(**d) for d in raw_drivers]
 
-    is_eligible = elig_mat[0, ACTION_NAMES.index(best_action)] == 1.0 if best_action != "no_action" else True
-    elig_reason = sub_reasons.get(best_action, "Baseline holdout.")
+    is_eligible = bool(elig_mat[0, ACTION_NAMES.index(best_action)] == 1.0) if best_action != "no_action" else True
+    elig_reason = str(sub_reasons.get(best_action, "Baseline holdout."))
 
     # 6. Formulate DecisionPacket
     packet = DecisionPacket(
@@ -232,9 +238,9 @@ def decide_single_subscriber(payload: SubscriberFeatureInput):
         expected_uplift_pct=round(best_uplift, 2),
         uplift_confidence_lower_90=round(best_lcb, 2),
         uplift_confidence_upper_90=round(best_lcb + 4.5, 2),
-        eligibility_passed=is_eligible,
+        eligibility_passed=bool(is_eligible),
         eligibility_reason=elig_reason,
-        intervention_cost_idr=best_cost,
+        intervention_cost_idr=float(best_cost),
         expected_net_value_idr=round(best_net_ev, 0),
         top_key_drivers=top_drivers,
     )

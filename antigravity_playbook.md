@@ -73,7 +73,7 @@ Jangan menyuruh agen Antigravity membangun seluruh aplikasi dalam satu prompt ra
 
 > **Copy-Paste ke Antigravity (Tahap 4):**
 >
-> "Kerjakan **Tahap 4 (MLOps Observability & Portfolio Polish)**:
+> "Kerjakan **Tahap 4 (MLOps Observability & Production Hardening)**:
 >
 > 1. Buat `src/monitoring/drift_detector.py` yang menghitung *Population Stability Index* (PSI) dan uji Kolmogorov-Smirnov (`scipy.stats.ks_2samp`) pada fitur utama serta distribusi *uplift*, lalu mengeluarkan status `RETRAIN_REQUIRED` jika $\text{PSI} \ge 0.25$.
 >
@@ -93,24 +93,16 @@ Jangan menyuruh agen Antigravity membangun seluruh aplikasi dalam satu prompt ra
 >
 > 3. Pertahankan desain **Dominant-White Swiss Editorial** (`#FFFFFF` background, `#F8FAFC` surface, `1px solid #E2E8F0` hairline border, `JetBrains Mono` tabular numerals, dan **nol** gradasi neon/ungu *AI-slop*)."
 
-## 3. Cara Menjual Proyek Ini di CV & Interview (3 Sudut Pandang Role)
+## 3. Ringkasan Evaluasi Dampak Bisnis & Rekayasa Sistem (Executive Summary)
 
-Gunakan poin-poin di bawah ini pada CV ATS dan profil LinkedIn kamu sesuai posisi yang dilamar:
+* **Preskriptif & Causal Uplift (Optimization Impact):**
+  * Merancang sistem **Causal Uplift & Prescriptive Next-Best-Action (GARUDA-NBA)** menggunakan **Multi-Treatment Meta-Learners** dan **Stackelberg Game-Theoretic Optimization**, meningkatkan nilai retensi bersih sebesar **+Rp 241,394,174** pada kohort uji 5.000 pelanggan dibandingkan penargetan risiko churn konvensional.
+  * Mengeliminasi 100% intervensi merugikan pada segmen **Sleeping Dogs** (80 kasus pada kebijakan naif) melalui aturan **90% Lower Confidence Bound (LCB)** dan menghasilkan atribusi fitur individu berbasis **TreeSHAP**.
 
-* **Saat Melamar sebagai Data Scientist (seperti di IOH / Telkomsel / Bank Digital):**
+* **Model-to-Agent Industrialization (Production Engineering):**
+  * Mengindustrialisasi pipeline keputusan **Model-to-Agent** berlatensi rendah (< 35 ms) dengan **FastAPI**, **LightGBM**, dan kontrak skema **Pydantic v2 (`DecisionPacket`)** yang dikonsumsi secara aman oleh agen LLM untuk intervensi retensi otomatis tanpa halusinasi.
+  * Membangun sistem **MLOps Drift Governance** otomatis berbasis **Population Stability Index (PSI)** dan **MLflow** yang mendeteksi pergeseran distribusi fitur ($\text{PSI} \ge 0.25$) dengan konsumsi memori puncak hanya **224 MB RAM**.
 
-  * *Merancang sistem **Causal Uplift & Prescriptive Next-Best-Action (GARUDA-NBA)** menggunakan **Multi-Treatment Meta-Learners** dan **Stackelberg Game-Theoretic Optimization**, meningkatkan nilai retensi bersih sebesar **+Rp 241,394,174** pada kohort uji 5.000 pelanggan dibandingkan penargetan risiko churn konvensional.*
-
-  * *Mengeliminasi 100% intervensi merugikan pada segmen **Sleeping Dogs** (80 kasus pada kebijakan naif) melalui aturan **90% Lower Confidence Bound (LCB)** dan menghasilkan atribusi fitur individu berbasis **TreeSHAP**.*
-
-* **Saat Melamar sebagai AI / ML Engineer:**
-
-  * *Mengindustrialisasi pipeline keputusan **Model-to-Agent** berlatensi rendah (< 25 ms) dengan **FastAPI**, **LightGBM**, dan kontrak skema **Pydantic v2 (`DecisionPacket`)** yang dikonsumsi secara aman oleh agen LLM untuk intervensi retensi otomatis tanpa halusinasi.*
-
-  * *Membangun sistem **MLOps Drift Governance** otomatis berbasis **Population Stability Index (PSI)** dan **MLflow** yang mendeteksi pergeseran distribusi fitur (*$\text{PSI} = 1.38 \ge 0.25$*) dengan konsumsi memori puncak hanya **224 MB RAM**.*
-
-* **Saat Melamar sebagai Data Engineer:**
-
-  * *Membangun arsitektur **Local-First Data Lakehouse (Bronze-Silver-Gold)** menggunakan **DuckDB**, **Polars**, dan **Apache Parquet (Zstd)** yang memproses telemetri pelanggan secara *point-in-time correct* dengan efisiensi memori ekstrem (< 500 MB RAM).*
-
-  * *Menerapkan kontrak kualitas data deterministik (*Zero Target Leakage, Schema & Boundary Assertions*) yang menjamin kesiapan fitur (*data readiness*) untuk pelatihan dan inferensi model produksi.*
+* **Data Engineering Lakehouse (Storage & Compute Efficiency):**
+  * Membangun arsitektur **Local-First Data Lakehouse (Bronze-Silver-Gold)** menggunakan **DuckDB**, **Polars**, dan **Apache Parquet (Zstd)** yang memproses telemetri pelanggan secara *point-in-time correct* dengan efisiensi memori ekstrem (< 400 MB RAM).
+  * Menerapkan kontrak kualitas data deterministik (*Zero Target Leakage, Schema & Boundary Assertions*) yang menjamin kesiapan fitur (*data readiness*) untuk pelatihan dan inferensi model produksi.

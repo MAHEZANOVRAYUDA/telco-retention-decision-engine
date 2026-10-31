@@ -557,7 +557,7 @@
           : 0.10;
 
       const effQos =
-        sub.dropRate >= 5.0 || sub.complaints >= 2 ? 1.38 : 0.04;
+        sub.dropRate >= 5.0 ? 1.38 : (sub.complaints >= 3 ? -0.45 : (sub.complaints >= 1 ? 0.35 : 0.04));
 
       const pBooster = sigmoid(baseLogit + effBooster);
       const pDiscount = sigmoid(baseLogit + effDiscount);
@@ -974,6 +974,16 @@
           const agent = data.agent_response;
           if (packet && agent) {
             document.getElementById("decisionPacketJson").textContent = JSON.stringify(packet, null, 2);
+            if (packet.strategic_quadrant) {
+              const qBadge = document.getElementById("simQuadrantBadge");
+              qBadge.textContent = `Quadrant: ${packet.strategic_quadrant}`;
+              qBadge.className =
+                packet.strategic_quadrant === "Persuadable"
+                  ? "text-xs font-mono-tabular font-semibold px-2.5 py-1 rounded-sm border bg-emerald-50 text-emerald-800 border-emerald-300"
+                  : packet.strategic_quadrant === "Sleeping_Dog"
+                  ? "text-xs font-mono-tabular font-semibold px-2.5 py-1 rounded-sm border bg-rose-50 text-rose-800 border-rose-300"
+                  : "text-xs font-mono-tabular font-semibold px-2.5 py-1 rounded-sm border bg-slate-100 text-slate-800 border-slate-300";
+            }
             const agentBox = document.getElementById("agentMessageBox");
             const agentBadge = document.getElementById("agentGuardrailBadge");
             if (agent.guardrail_passed) {

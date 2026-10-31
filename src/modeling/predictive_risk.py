@@ -124,15 +124,17 @@ class BaselineRiskModel:
         if self.tree_explainer is None:
             raise RuntimeError("TreeExplainer is not fitted.")
         X = self._prepare_features(df)
-        shap_values = self.tree_explainer.shap_values(X)
-
-        # For binary classification, TreeExplainer returns array of shape (N, D) or list of two arrays
-        if isinstance(shap_values, list):
-            shap_mat = shap_values[1]  # positive class: Churn
-        elif len(shap_values.shape) == 3:
-            shap_mat = shap_values[:, :, 1]
-        else:
-            shap_mat = shap_values
+        try:
+            explanation = self.tree_explainer(X)
+            shap_mat = explanation.values
+        except Exception:
+            shap_values = self.tree_explainer.shap_values(X)
+            if isinstance(shap_values, list):
+                shap_mat = shap_values[1]
+            elif len(shap_values.shape) == 3:
+                shap_mat = shap_values[:, :, 1]
+            else:
+                shap_mat = shap_values
 
         results: List[List[Dict[str, Any]]] = []
         for i in range(len(df)):

@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "src/modeling/predictive_risk.py": {
-    "mtime": 1793460876.7006955,
-    "seen": 1793461129.1636043,
-    "ast_hash": "71606fc3f2f64bc86ca4bec1ad2eeb87",
+    "mtime": 1793462318.4793396,
+    "seen": 1793462811.1965253,
+    "ast_hash": "56017b8e79b82e3b6e6f84b9616b2383",
     "semantic_hash": ""
   },
   "tests/__init__.py": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "src/api/app.py": {
-    "mtime": 1793461645.795433,
-    "seen": 1793461767.0461295,
-    "ast_hash": "0775c5ea38671ce5c9913063ac3a60db",
+    "mtime": 1793462695.218811,
+    "seen": 1793462811.1965094,
+    "ast_hash": "95ff6473ab7d65d0217963c95d834286",
     "semantic_hash": ""
   },
   "tests/test_decision_contract.py": {
@@ -144,15 +144,15 @@
     "semantic_hash": ""
   },
   "antigravity_playbook.md": {
-    "mtime": 1793459415.4168704,
-    "seen": 1793461129.1636095,
-    "ast_hash": "604ff000da9fdc3e19367d970777d4e5",
+    "mtime": 1793462515.3461876,
+    "seen": 1793462811.19654,
+    "ast_hash": "dbcc0762fe80af9e2951d48bddccc11c",
     "semantic_hash": ""
   },
   "design.md": {
-    "mtime": 1793459373.617656,
-    "seen": 1793461129.1636105,
-    "ast_hash": "dc4ab9a89cbd1e9ae04cc331602c95b9",
+    "mtime": 1793462404.331965,
+    "seen": 1793462811.196541,
+    "ast_hash": "bafbcb0a30e6128c9c3c5bce98c50172",
     "semantic_hash": ""
   },
   "garuda_nba_stackelberg_retention_causal_uplift_decision_console.html": {
@@ -162,9 +162,9 @@
     "semantic_hash": ""
   },
   "prd.md": {
-    "mtime": 1793458732.451351,
-    "seen": 1793461129.1636121,
-    "ast_hash": "1968986d0aa281ae12c9e6c88ebb658a",
+    "mtime": 1793462389.4932604,
+    "seen": 1793462811.1965437,
+    "ast_hash": "11572869556839bce1a73fe6fcd7bf99",
     "semantic_hash": ""
   },
   "requirements-8gb.txt": {
@@ -174,15 +174,15 @@
     "semantic_hash": ""
   },
   "tasks/plan.md": {
-    "mtime": 1793460320.0083375,
-    "seen": 1793461129.163614,
-    "ast_hash": "58debf43b39f31d7e222ef13e2dfc16c",
+    "mtime": 1793462520.5143716,
+    "seen": 1793462811.196547,
+    "ast_hash": "36cf78dcbdeef43614ad5b1125369013",
     "semantic_hash": ""
   },
   "tasks/todo.md": {
-    "mtime": 1793461580.5375874,
-    "seen": 1793461767.0461657,
-    "ast_hash": "a37fe673330a58949116242093303bdc",
+    "mtime": 1793462528.6936858,
+    "seen": 1793462811.196548,
+    "ast_hash": "608d88262439411267dbf0077c4da24a",
     "semantic_hash": ""
   },
   "src/monitoring/__init__.py": {
@@ -210,21 +210,27 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793461499.750109,
-    "seen": 1793461767.046157,
-    "ast_hash": "df0f3f262c6ab8ba2f4f0e5be2d788c9",
+    "mtime": 1793462367.9345858,
+    "seen": 1793462811.1965392,
+    "ast_hash": "8ca2c16be400e462e7aef30f4c068fbd",
     "semantic_hash": ""
   },
   "tests/test_ui_and_endpoints.py": {
-    "mtime": 1793461712.961259,
-    "seen": 1793461767.0461555,
-    "ast_hash": "31c6db6aadbbee146f9bb501c2a2c835",
+    "mtime": 1793461819.7806158,
+    "seen": 1793462811.1965358,
+    "ast_hash": "1d7478821455ad2589afaf08f44bf11b",
     "semantic_hash": ""
   },
   "src/api/templates/index.html": {
-    "mtime": 1793461700.3384507,
-    "seen": 1793461767.0461638,
-    "ast_hash": "f262a2378dc63e233b47f322f2008036",
+    "mtime": 1793462731.9830093,
+    "seen": 1793462811.196546,
+    "ast_hash": "34c7166f5dbd9c923d14f84a84e8256c",
+    "semantic_hash": ""
+  },
+  "CONSTRAINTS.md": {
+    "mtime": 1793462553.5698762,
+    "seen": 1793462811.196538,
+    "ast_hash": "3e96a369ca05abbf4250bb64e5db5dbd",
     "semantic_hash": ""
   }
 }
