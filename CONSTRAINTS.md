@@ -55,3 +55,4 @@ Last reviewed: 2026-10-31 by Engineering Architecture Lead
 | `tests/test_decision_contract.py` | Pydantic v2 schemas, Agent hard guardrails, Deterministic message synthesis | 100% Passed |
 | `tests/test_drift_detector.py` | Kolmogorov-Smirnov test, PSI calculation, MLflow SQLite telemetry tracking | 100% Passed |
 | `tests/test_ui_and_endpoints.py` | Swiss Editorial HTML serving, CSS hairline borders, REST API contract validation | 100% Passed |
+

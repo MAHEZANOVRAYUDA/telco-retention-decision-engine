@@ -89,30 +89,38 @@ class RetentionAgent:
         action = packet.recommended_action
         sub_id = packet.subscriber_id
 
-        # Format key drivers explanation
-        driver_details = []
+        # Human-friendly context translation for consumer-facing communication
+        friendly_reasons = []
         for d in packet.top_key_drivers[:2]:
-            driver_details.append(f"{d.feature_name.replace('_', ' ')}: {d.feature_value}")
-        driver_str = ", ".join(driver_details) if driver_details else "telemetri penggunaan"
+            fn = d.feature_name.lower()
+            if "drop" in fn or "loss" in fn:
+                friendly_reasons.append("pemantauan stabilitas jaringan")
+            elif "decay" in fn or "usage" in fn:
+                friendly_reasons.append("penyesuaian kebutuhan kuota data Anda")
+            elif "complaint" in fn:
+                friendly_reasons.append("evaluasi penanganan kendala")
+            elif "tenure" in fn:
+                friendly_reasons.append("apresiasi masa berlangganan")
+        driver_str = " serta ".join(friendly_reasons) if friendly_reasons else "pemeliharaan rutin kualitas layanan"
 
         if action == "data_booster_15gb":
             msg = (
-                f"Halo Pelanggan Setia IOH ({sub_id}), kami mengamati kuota data Anda hampir habis berdasarkan "
-                f"analisis pola konsumsi Anda ({driver_str}). Spesial hari ini, kami mengaktifkan Kuota Tambahan "
-                f"Data Booster 15 GB (7 Hari) untuk menjaga konektivitas digital Anda tetap lancar!"
+                f"Halo Pelanggan Setia IOH ({sub_id}), kami memperhatikan {driver_str}. "
+                f"Spesial hari ini, kami mengaktifkan Kuota Tambahan Data Booster 15 GB (7 Hari) "
+                f"langsung ke nomor Anda untuk memastikan konektivitas digital Anda tetap lancar!"
             )
             tech = f"Injected 15GB 7D high-priority data slice based on usage decay ({packet.expected_uplift_pct:.1f}% expected uplift)."
         elif action == "combo_discount_20pct":
             msg = (
                 f"Yth. Pelanggan Prioritas IOH ({sub_id}), terima kasih atas loyalitas Anda bersama kami. "
-                f"Sebagai bentuk apresiasi atas hubungan kemitraan kita ({driver_str}), kami memberikan Diskon "
-                f"Spesial 20% untuk paket langganan 3 bulan ke depan melalui aplikasi MyIOH."
+                f"Sebagai bentuk apresiasi dan {driver_str}, Anda berhak mengaktifkan Diskon Spesial 20% "
+                f"untuk paket langganan 3 bulan ke depan melalui aplikasi MyIOH."
             )
             tech = f"Applied 20% renewal contract discount subsidy (Net EV: Rp {packet.expected_net_value_idr:,.0f})."
         elif action == "qos_priority_care":
             msg = (
-                f"Pemberitahuan Kualitas Layanan IOH ({sub_id}): Tim Network Operations kami mendeteksi fluktuasi "
-                f"sinyal di BTS area Anda ({driver_str}). Prioritas koneksi nomor Anda telah ditingkatkan ke jalur "
+                f"Pemberitahuan Kualitas Layanan IOH ({sub_id}): Tim Network Operations kami melakukan "
+                f"{driver_str} di area Anda. Prioritas koneksi nomor Anda telah ditingkatkan ke jalur "
                 f"QoS Premium dan tiket perbaikan #CARE-{sub_id[-4:]} telah otomatis diterbitkan untuk pemantauan 24 jam."
             )
             tech = f"Opened auto-care NOC priority ticket and elevated radio bearer slice (CATE Uplift: +{packet.expected_uplift_pct:.1f}%)."
