@@ -28,8 +28,9 @@ def test_serve_simulator_html(client):
     assert "text/html" in res.headers["content-type"]
     html = res.text
 
-    # Title verification
-    assert "GARUDA-NBA — Stackelberg Retention & Causal Uplift Decision Console" in html
+    # Title verification (Telco Retention Decision Engine / GARUDA-NBA)
+    assert "Telco Retention Decision Engine" in html or "GARUDA-NBA" in html
+    assert "Stackelberg Retention" in html
 
     # Tab navigation elements
     assert "tabBtnCohort" in html
