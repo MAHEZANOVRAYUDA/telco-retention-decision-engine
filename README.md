@@ -2,7 +2,7 @@
 ### Prescriptive Next-Best-Action & Causal Uplift Optimization Platform for Telecom Retention
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://telco-retention-decision-engine-maheza.streamlit.app/)
 [![Hardware Profile](https://img.shields.io/badge/Hardware-Strict_8GB_RAM_Laptop-0D9488.svg)](https://github.com/MAHEZANOVRAYUDA/telco-retention-decision-engine)
 [![Peak RSS Memory](https://img.shields.io/badge/Peak_RSS-223.5_MB-059669.svg)](https://github.com/MAHEZANOVRAYUDA/telco-retention-decision-engine)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -10,15 +10,56 @@
 
 **Author:** Maheza Novrayuda ([GitHub](https://github.com/MAHEZANOVRAYUDA) · [LinkedIn](https://www.linkedin.com/in/mahezanovrayuda/))  
 **Target Domain:** Telekomunikasi & Layanan Berlangganan Digital  
-**Arsitektur:** Clean Modular Monolith (DuckDB Lakehouse $\to$ Multi-Treatment CATE Uplift $\to$ SciPy HiGHS Knapsack $\to$ Pydantic v2 Agentic API & Streamlit Console)
+**Arsitektur:** Clean Modular Monolith (DuckDB Lakehouse $\to$ Multi-Treatment CATE Uplift $\to$ SciPy HiGHS Knapsack $\to$ Pydantic v2 Agentic API & Streamlit Console)  
+
+> 🚀 **Live Production Demo:** **[https://telco-retention-decision-engine-maheza.streamlit.app/](https://telco-retention-decision-engine-maheza.streamlit.app/)**  
+> *Aplikasi konsol keputusan ini aktif dan dapat dicoba secara interaktif langsung melalui peramban web.*
 
 ---
 
-## 🖥️ Antarmuka Dasbor Interaktif
+## 🖥️ Antarmuka Dasbor & Galeri Fitur Lengkap
 
-Berikut adalah tampilan antarmuka konsol keputusan TRDE dengan arsitektur soft glassmorphism modern, visualisasi kurva pertambahan nilai kumulatif (Qini curve), distribusi alokasi aksi, dan buku besar keputusan pelanggan:
+Antarmuka TRDE mengadopsi rancangan *modern soft glassmorphism* dengan kanvas *soft ambient cyan* yang sejuk dan ergonomis. Sistem terbagi menjadi 3 modul analitik utama:
 
-![Telco Retention Decision Engine Dashboard Preview](docs/images/dashboard_preview.png)
+---
+
+### Fitur 1: Stackelberg Cohort Optimizer & Qini Economic Gain Curve
+Modul perencanaan alokasi anggaran kampanye global untuk seluruh kohort pelanggan berbasis algoritma *Mixed-Integer Linear Programming (MILP)*:
+
+![Fitur 1: Stackelberg Cohort Optimizer & Qini Curve](docs/images/feature1_optimizer.png)
+
+* **Kontrol Anggaran Dinamis:** Slider pagu anggaran kampanye ($B$) dari Rp 4 Juta hingga Rp 40 Juta dengan perhitungan instan sub-detik.
+* **Toleransi Risiko Ketidakpastian ($\alpha$):** Pilihan kebijakan konservatif 90% LCB ($z = 1.28$), moderat 80% LCB ($z = 0.84$), atau netral estimasi titik ($z = 0.00$).
+* **Proteksi Otomatis Sleeping Dogs:** Sakelar guardrail untuk mengunci intervensi pada pelanggan berisiko dampak perlakuan negatif ($\hat{\tau} \le 0$).
+* **Kurva Akumulasi Nilai Ekonomi (Qini Curve):** Visualisasi kurva nilai retensi bersih TRDE vs kebijakan tradisional berbasis probabilitas churn.
+* **Distribusi Bauran Aksi (Action Mix):** Diagram batang alokasi kuota per opsi intervensi (*Holdout*, *15GB Booster*, *QoS Priority*, *Combo 20%*).
+* **Buku Besar Keputusan (*Subscriber Decision Ledger*):** Tabel interaktif dengan filter kuadran strategis (*Persuadable*, *Sure Thing*, *Sleeping Dog*, *Lost Cause*) dan ekspor data ke format `.CSV`.
+
+---
+
+### Fitur 2: Single-Subscriber Counterfactual Simulator & Agentic Copilot
+Modul simulasi intervensi tingkat individu yang menyajikan evaluasi *what-if*, atribusi pendorong keputusan berbasis game theory, dan kontrak data agen AI:
+
+![Fitur 2: Subscriber Counterfactual Simulator & Agentic Copilot](docs/images/feature2_subscriber_inspector.png)
+
+* **Arketipe Profil Pelanggan:** Pilihan cepat profil pelanggan representatif (misal: *High ARPU + Gangguan Sinyal*, *Heavy Data User + Penurunan Pemakaian*, *Pelanggan Loyal*, dan *Pelanggan Komplain Tinggi*).
+* **Slider Parameter Real-Time:** Simulasi nilai ARPU bulanan, rasio penurunan data (decay), tingkat gangguan sinyal (drop call rate), jumlah tiket keluhan, dan masa langganan (tenure).
+* **Matriks Evaluasi Counterfactual:** Komparasi langsung 4 lengan perlakuan untuk memilih aksi dengan *Risk-Adjusted Expected Net Value* tertinggi.
+* **Pendorong Keputusan TreeSHAP ($\phi_j$):** Visualisasi kontribusi fitur pendorong retensi (batang hijau) dan pendorong churn (batang merah) berbasis nilai Shapley eksak.
+* **Inspektor Kontrak JSON Pydantic v2 (`DecisionPacket`):** Salinan data terstruktur siap konsumsi untuk sistem backend dengan tombol *Copy JSON*.
+* **Intervensi Agen Terpersonalisasi:** Balon pesan komunikasi kontekstual (aplikasi MyIOH / WhatsApp) yang dihasilkan dengan verifikasi guardrail otomatis (*Zero Hallucination Guarantee*).
+
+---
+
+### Fitur 3: MLOps Population Stability Index (PSI) Drift Monitor & Tata Kelola RAM 8 GB
+Modul pemantauan kesehatan model produksi dan tata kelola efisiensi sumber daya komputasi laptop 8 GB:
+
+![Fitur 3: MLOps Drift Monitor & 8GB Resource Governance](docs/images/feature3_drift_telemetry.png)
+
+* **Stress-Tester Pergeseran Distribusi (Concept Drift):** Slider simulasi intensitas guncangan pasar kompetitor atau anomali jaringan BTS dari 0% hingga 45%.
+* **Tabel Metrik PSI & Uji Kolmogorov-Smirnov (KS-Test):** Pemantauan stabilitas fitur emas (`usage_decay_ratio`, `drop_call_rate`, `monthly_arpu_idr`) dan skor uplift CATE secara real-time.
+* **Gerbang Retraining Otomatis (*Auto-Retrain Gate*):** Sinyal status dinamis (`STABLE` untuk $\text{PSI} < 0.10$, `WARN` untuk $\text{PSI} \ge 0.10$, dan `RETRAIN_REQUIRED` untuk $\text{PSI} \ge 0.25$).
+* **Tata Kelola Memori Laptop 8 GB (First-Principles Resource Governance):** Pembagian batas kuota memori per lapisan sistem (DuckDB ETL 94 MB, T-Learner ML 68.5 MB, SciPy MILP 32 MB, FastAPI/Streamlit 29 MB) membuktikan sistem stabil beroperasi di bawah 250 MB RAM.
 
 ---
 
@@ -52,7 +93,7 @@ Proyek ini dibangun menggunakan pustaka open-source berbasis C++, Rust, dan Pyth
 * **Optimasi Kombinatorial:**
   * **SciPy HiGHS (`scipy.optimize.milp`):** Pemecah program linier bilangan bulat (*Mixed-Integer Linear Programming*) untuk alokasi anggaran kampanye global (Multi-Choice Knapsack Problem).
 * **Delivery & Antarmuka Pengguna:**
-  * **Streamlit (v1.38+):** Dasbor web interaktif berbasis Python yang siap dideploy langsung ke Streamlit Community Cloud.
+  * **Streamlit (v1.38+):** Dasbor web interaktif berbasis Python yang aktif pada [Streamlit Community Cloud](https://telco-retention-decision-engine-maheza.streamlit.app/).
   * **FastAPI & Uvicorn:** Layanan REST API dengan latensi inferensi sub-35 ms.
   * **Tailwind CSS 3.4 & Chart.js 4.4:** Antarmuka responsif dengan kurva spline Qini interaktif dan pemantauan memori real-time.
 * **Validasi Skema & Observabilitas:**
@@ -145,7 +186,7 @@ Alur pemrosesan data berjalan dalam 5 tahapan berurutan:
 4. **Waktu Solver Cepat (Sub-Detik):**
    * Alokasi optimal untuk kohort 5.000 pelanggan diselesaikan dalam **0.18 detik** menggunakan mesin optimasi HiGHS berbasis C++.
 5. **Dukungan Deploy Langsung ke Streamlit Cloud:**
-   * Dilengkapi file `streamlit_app.py` dan `requirements.txt` teruji yang dapat langsung dideploy secara publik melalui GitHub tanpa konfigurasi rumit.
+   * Aplikasi aktif dan dapat langsung diakses publik melalui tautan [telco-retention-decision-engine-maheza.streamlit.app](https://telco-retention-decision-engine-maheza.streamlit.app/).
 
 ---
 
@@ -180,11 +221,9 @@ Uji coba dilakukan pada kohort 5.000 pelanggan dengan pagu anggaran kampanye seb
 
 ## 8. Panduan Menjalankan Aplikasi
 
-### A. Menjalankan di Streamlit Community Cloud (Rekomendasi)
-1. Buka [share.streamlit.io](https://share.streamlit.io/).
-2. Hubungkan repositori GitHub: `MAHEZANOVRAYUDA/telco-retention-decision-engine`.
-3. Set branch ke `main` dan main file path ke `streamlit_app.py`.
-4. Klik **Deploy**.
+### A. Mengakses Live Demo (Streamlit Cloud)
+Aplikasi aktif dan dapat langsung dibuka di peramban web:  
+👉 **[https://telco-retention-decision-engine-maheza.streamlit.app/](https://telco-retention-decision-engine-maheza.streamlit.app/)**
 
 ### B. Menjalankan Secara Lokal
 
