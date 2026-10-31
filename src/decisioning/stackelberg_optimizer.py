@@ -55,6 +55,52 @@ class StackelbergBudgetOptimizer:
 
         return payoffs
 
+    def optimize_cohort(
+        self,
+        df: pd.DataFrame,
+        tau_lcb: Dict[str, np.ndarray],
+        eligibility_matrix: Optional[np.ndarray] = None,
+        budget: Optional[float] = None,
+    ) -> Dict[str, Any]:
+        """High-level cohort optimization wrapper solving HiGHS MILP Knapsack."""
+        b_budget = float(budget if budget is not None else self.budget_idr)
+        payoffs = self.compute_payoff_matrix(df, tau_lcb)
+
+        if eligibility_matrix is None:
+            n_sub = len(df)
+            eligibility_matrix = np.ones((n_sub, self.n_arms), dtype=np.float64)
+            for k, arm in enumerate(self.action_names):
+                if arm != "no_action" and arm in tau_lcb:
+                    eligibility_matrix[:, k] = np.where(tau_lcb[arm] > 0, 1.0, 0.0)
+
+        chosen_indices, meta = self.solve_milp_highs(payoffs, eligibility_matrix, budget=b_budget)
+
+        recommended_actions = [self.action_names[idx] for idx in chosen_indices]
+        action_costs = [self.action_costs[act] for act in recommended_actions]
+        expected_net_ev = [round(float(payoffs[i, chosen_indices[i]]), 0) for i in range(len(df))]
+
+        allocation_df = pd.DataFrame({
+            "subscriber_id": df["subscriber_id"].values if "subscriber_id" in df.columns else [f"SUB-{i+1}" for i in range(len(df))],
+            "recommended_action": recommended_actions,
+            "action_cost_idr": action_costs,
+            "expected_net_ev_idr": expected_net_ev,
+        })
+
+        treated_count = int(np.sum(chosen_indices > 0))
+
+        return {
+            "budget_limit_idr": meta["budget_limit_idr"],
+            "budget_spent_idr": meta["budget_spent_idr"],
+            "budget_utilization_pct": meta["budget_utilization_pct"],
+            "net_incremental_value_idr": meta["net_incremental_value_idr"],
+            "roi_multiple": meta["roi_multiple"],
+            "treated_subscribers_count": treated_count,
+            "action_distribution": meta["action_distribution"],
+            "solver": meta["solver"],
+            "solver_execution_seconds": meta["elapsed_seconds"],
+            "allocation_results": allocation_df,
+        }
+
     def solve_milp_highs(
         self,
         payoff_matrix: np.ndarray,

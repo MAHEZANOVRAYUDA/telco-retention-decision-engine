@@ -204,8 +204,8 @@ with tab_lakehouse:
 
         if gold_parquet_path.exists():
             con = duckdb.connect(":memory:")
-            st.code(f"SELECT * FROM read_parquet('{gold_parquet_path.as_posix()}') LIMIT 5;", language="sql")
-            df_gold = con.execute(f"SELECT subscriber_id, tenure_months, monthly_arpu_idr, usage_decay_ratio, drop_call_rate, cltv_idr, churn_label FROM read_parquet('{gold_parquet_path.as_posix()}') LIMIT 20;").fetchdf()
+            st.code(f"SELECT subscriber_id, tenure_months, monthly_arpu_idr, usage_decay_ratio, drop_call_rate, cltv_idr, treatment_arm, retained_flag FROM read_parquet('{gold_parquet_path.as_posix()}') LIMIT 5;", language="sql")
+            df_gold = con.execute(f"SELECT subscriber_id, tenure_months, monthly_arpu_idr, usage_decay_ratio, drop_call_rate, cltv_idr, treatment_arm, retained_flag FROM read_parquet('{gold_parquet_path.as_posix()}') LIMIT 20;").fetchdf()
             st.dataframe(df_gold, use_container_width=True, hide_index=True)
             con.close()
         else:
