@@ -78,3 +78,4 @@ class CohortOptimizationSummary(BaseModel):
     action_distribution: Dict[str, int]
     solver: str
     elapsed_seconds: float
+

@@ -189,3 +189,4 @@ ATURAN:
         except Exception as e:
             logger.warning(f"Groq API call failed or timed out: {e}. Switching to deterministic fallback.")
         return None
+

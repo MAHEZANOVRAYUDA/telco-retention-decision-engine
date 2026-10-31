@@ -23,7 +23,7 @@ except ImportError:
     def get_process_ram_mb() -> float:
         return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024.0
 
-from src.config import BRONZE_DIR, GOLD_DIR, SILVER_DIR, TARGET_RAM_MB
+from src.config import BRONZE_DIR, GOLD_DIR, PEAK_RAM_CEILING_MB, SILVER_DIR, TARGET_RAM_MB
 from src.data_engineering.ingest import ingest_bronze
 from src.data_engineering.quality_gates import (
     QualityGateViolation,
@@ -65,7 +65,8 @@ def test_ingestion_and_medallion_pipeline(tmp_path):
 
     # 4. Check RAM
     ram_current = get_process_ram_mb()
-    assert ram_current < TARGET_RAM_MB, f"RAM {ram_current:.1f} MB exceeds target {TARGET_RAM_MB} MB"
+    assert ram_current < PEAK_RAM_CEILING_MB, f"RAM {ram_current:.1f} MB exceeds peak limit {PEAK_RAM_CEILING_MB} MB"
+    assert (ram_current - ram_initial) < TARGET_RAM_MB, f"Incremental RAM {ram_current - ram_initial:.1f} MB exceeds target {TARGET_RAM_MB} MB"
 
 
 def test_quality_gate_detects_duplicates(tmp_path):

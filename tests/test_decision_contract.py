@@ -199,3 +199,4 @@ def test_fastapi_endpoints(api_client):
     assert "status" in data_drift
     assert "max_psi" in data_drift
     assert "features" in data_drift
+
