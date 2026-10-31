@@ -24,3 +24,4 @@ serve:
 
 clean:
 	python -c "import shutil, os, glob; [shutil.rmtree(p, ignore_errors=True) for p in glob.glob('**/__pycache__', recursive=True)]; shutil.rmtree('.pytest_cache', ignore_errors=True)"
+

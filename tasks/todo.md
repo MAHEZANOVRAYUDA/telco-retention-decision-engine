@@ -41,8 +41,10 @@
   - [x] Create `tests/test_drift_detector.py` (4/4 passed, total suite 14/14 passed)
   - [x] Update graphify knowledge graph (`graphify-out/graph.json`: 306 nodes, 486 edges, 24 communities)
 
-- [ ] Tahap 5: Dominant-White Swiss Editorial Console UI Integration
-  - [ ] Create `src/api/templates/index.html` from `garuda_nba_stackelberg_retention_causal_uplift_decision_console.html`
-  - [ ] Connect interactive controls (Budget Slider, LCB Alpha, TreeSHAP Inspector, PSI Drift Stress-Tester) to FastAPI endpoints
-  - [ ] Verify Dominant-White aesthetics (#FFFFFF / #F8FAFC, 1px solid #E2E8F0, JetBrains Mono tabular numerals, zero AI-slop)
-  - [ ] End-to-end integration test of all endpoints & UI
+- [x] Tahap 5: Dominant-White Swiss Editorial Console UI Integration
+  - [x] Create `src/api/templates/index.html` from `garuda_nba_stackelberg_retention_causal_uplift_decision_console.html`
+  - [x] Connect interactive controls (Budget Slider, LCB Alpha, TreeSHAP Inspector, PSI Drift Stress-Tester) to FastAPI endpoints with seamless in-memory fallback
+  - [x] Verify Dominant-White aesthetics (#FFFFFF / #F8FAFC, 1px solid #E2E8F0, JetBrains Mono tabular numerals, zero AI-slop)
+  - [x] Create `tests/test_ui_and_endpoints.py` (3/3 passed, total suite 17/17 passed)
+  - [x] End-to-end integration test of all endpoints & UI (100% green)
+  - [x] Update graphify knowledge graph (`graphify-out/graph.json`: 318 nodes, 499 edges, 25 communities)

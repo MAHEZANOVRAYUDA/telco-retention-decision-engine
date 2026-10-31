@@ -10,7 +10,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "qualitygateviolation",
       "source_file": "src/data_engineering/quality_gates.py",
@@ -75,7 +75,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "retentionagent",
       "source_file": "src/agentic/retention_agent.py",
@@ -88,7 +88,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "agentinterventionresponse",
       "source_file": "src/agentic/schemas.py",
@@ -101,7 +101,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "cohortoptimizationrequest",
       "source_file": "src/agentic/schemas.py",
@@ -114,7 +114,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "cohortoptimizationsummary",
       "source_file": "src/agentic/schemas.py",
@@ -127,7 +127,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "decisionpacket",
       "source_file": "src/agentic/schemas.py",
@@ -140,7 +140,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "featuredriver",
       "source_file": "src/agentic/schemas.py",
@@ -153,7 +153,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "subscriberfeatureinput",
       "source_file": "src/agentic/schemas.py",
@@ -165,7 +165,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "validate_gold_features()",
       "source_file": "src/data_engineering/quality_gates.py",
@@ -177,7 +177,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "get_duckdb_connection()",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -189,7 +189,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "run_medallion_pipeline()",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -201,7 +201,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "transform_bronze_to_silver()",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -213,7 +213,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "transform_silver_to_gold()",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -225,7 +225,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "get_process_ram_mb()",
       "source_file": "tests/test_quality_gates.py",
@@ -237,7 +237,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "test_ingestion_and_medallion_pipeline()",
       "source_file": "tests/test_quality_gates.py",
@@ -249,11 +249,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "test_quality_gate_detects_duplicates()",
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L71"
+      "source_location": "L72"
     },
     {
       "id": "tests_test_quality_gates_test_quality_gate_detects_negative_arpu",
@@ -261,47 +261,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "test_quality_gate_detects_negative_arpu()",
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L94"
+      "source_location": "L95"
     },
     {
-      "id": "src_data_engineering_ingest_download_hf_dataset",
-      "label": "download_hf_dataset()",
+      "id": "src_decisioning_eligibility_evaluate_eligibility_matrix",
+      "label": "evaluate_eligibility_matrix()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
       "community_name": "test_stackelberg_optimizer.py",
       "file_type": "code",
-      "norm_label": "download_hf_dataset()",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L130"
-    },
-    {
-      "id": "src_data_engineering_ingest_generate_calibrated_rct_telemetry",
-      "label": "generate_calibrated_rct_telemetry()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "code",
-      "norm_label": "generate_calibrated_rct_telemetry()",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L32"
-    },
-    {
-      "id": "src_data_engineering_ingest_ingest_bronze",
-      "label": "ingest_bronze()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "code",
-      "norm_label": "ingest_bronze()",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L147"
+      "norm_label": "evaluate_eligibility_matrix()",
+      "source_file": "src/decisioning/eligibility.py",
+      "source_location": "L25"
     },
     {
       "id": "src_modeling_evaluation_compute_qini_curve",
@@ -340,18 +316,6 @@
       "source_location": "L17"
     },
     {
-      "id": "tests_test_stackelberg_optimizer_sample_gold_data",
-      "label": "sample_gold_data()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "code",
-      "norm_label": "sample_gold_data()",
-      "source_file": "tests/test_stackelberg_optimizer.py",
-      "source_location": "L34"
-    },
-    {
       "id": "tests_test_stackelberg_optimizer_test_baseline_risk_and_treeshap",
       "label": "test_baseline_risk_and_treeshap()",
       "_callable": true,
@@ -376,88 +340,52 @@
       "source_location": "L91"
     },
     {
-      "id": "src_api_app_decide_single_subscriber",
-      "label": "decide_single_subscriber()",
+      "id": "src_data_engineering_ingest_download_hf_dataset",
+      "label": "download_hf_dataset()",
       "_callable": true,
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "decide_single_subscriber()",
-      "source_file": "src/api/app.py",
-      "source_location": "L143"
+      "norm_label": "download_hf_dataset()",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L130"
     },
     {
-      "id": "src_api_app_get_drift_metrics",
-      "label": "get_drift_metrics()",
+      "id": "src_data_engineering_ingest_generate_calibrated_rct_telemetry",
+      "label": "generate_calibrated_rct_telemetry()",
       "_callable": true,
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "get_drift_metrics()",
-      "source_file": "src/api/app.py",
-      "source_location": "L279"
+      "norm_label": "generate_calibrated_rct_telemetry()",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L32"
     },
     {
-      "id": "src_api_app_get_ram_usage_mb",
-      "label": "get_ram_usage_mb()",
+      "id": "src_data_engineering_ingest_ingest_bronze",
+      "label": "ingest_bronze()",
       "_callable": true,
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "get_ram_usage_mb()",
-      "source_file": "src/api/app.py",
-      "source_location": "L25"
+      "norm_label": "ingest_bronze()",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L147"
     },
     {
-      "id": "src_api_app_health_check",
-      "label": "health_check()",
+      "id": "tests_test_stackelberg_optimizer_sample_gold_data",
+      "label": "sample_gold_data()",
       "_callable": true,
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "health_check()",
-      "source_file": "src/api/app.py",
-      "source_location": "L122"
-    },
-    {
-      "id": "src_api_app_lifespan",
-      "label": "lifespan()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "lifespan()",
-      "source_file": "src/api/app.py",
-      "source_location": "L69"
-    },
-    {
-      "id": "src_api_app_optimize_cohort",
-      "label": "optimize_cohort()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "optimize_cohort()",
-      "source_file": "src/api/app.py",
-      "source_location": "L242"
-    },
-    {
-      "id": "src_decisioning_eligibility_evaluate_eligibility_matrix",
-      "label": "evaluate_eligibility_matrix()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "evaluate_eligibility_matrix()",
-      "source_file": "src/decisioning/eligibility.py",
-      "source_location": "L25"
+      "norm_label": "sample_gold_data()",
+      "source_file": "tests/test_stackelberg_optimizer.py",
+      "source_location": "L34"
     },
     {
       "id": "src_modeling_predictive_risk_baselineriskmodel_evaluate",
@@ -530,6 +458,54 @@
       "norm_label": "._prepare_features()",
       "source_file": "src/modeling/predictive_risk.py",
       "source_location": "L48"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_client",
+      "label": "client()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "code",
+      "norm_label": "client()",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_test_serve_simulator_html",
+      "label": "test_serve_simulator_html()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "code",
+      "norm_label": "test_serve_simulator_html()",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_test_swiss_editorial_styling_contracts",
+      "label": "test_swiss_editorial_styling_contracts()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "code",
+      "norm_label": "test_swiss_editorial_styling_contracts()",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_test_ui_backend_endpoints_functional",
+      "label": "test_ui_backend_endpoints_functional()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "code",
+      "norm_label": "test_ui_backend_endpoints_functional()",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L64"
     },
     {
       "id": "src_decisioning_stackelberg_optimizer_stackelbergbudgetoptimizer_compute_payoff_matrix",
@@ -801,7 +777,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "._generate_deterministic()",
       "source_file": "src/agentic/retention_agent.py",
@@ -813,7 +789,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "._generate_with_groq()",
       "source_file": "src/agentic/retention_agent.py",
@@ -825,7 +801,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "src/agentic/retention_agent.py",
@@ -837,7 +813,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": ".process_decision()",
       "source_file": "src/agentic/retention_agent.py",
@@ -849,11 +825,95 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "._resolve_channel()",
       "source_file": "src/agentic/retention_agent.py",
       "source_location": "L77"
+    },
+    {
+      "id": "src_api_app_decide_single_subscriber",
+      "label": "decide_single_subscriber()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "decide_single_subscriber()",
+      "source_file": "src/api/app.py",
+      "source_location": "L155"
+    },
+    {
+      "id": "src_api_app_get_drift_metrics",
+      "label": "get_drift_metrics()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "get_drift_metrics()",
+      "source_file": "src/api/app.py",
+      "source_location": "L291"
+    },
+    {
+      "id": "src_api_app_get_ram_usage_mb",
+      "label": "get_ram_usage_mb()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "get_ram_usage_mb()",
+      "source_file": "src/api/app.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "src_api_app_health_check",
+      "label": "health_check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "health_check()",
+      "source_file": "src/api/app.py",
+      "source_location": "L134"
+    },
+    {
+      "id": "src_api_app_lifespan",
+      "label": "lifespan()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "lifespan()",
+      "source_file": "src/api/app.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "src_api_app_optimize_cohort",
+      "label": "optimize_cohort()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "optimize_cohort()",
+      "source_file": "src/api/app.py",
+      "source_location": "L254"
+    },
+    {
+      "id": "src_api_app_serve_dashboard",
+      "label": "serve_dashboard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "serve_dashboard()",
+      "source_file": "src/api/app.py",
+      "source_location": "L124"
     },
     {
       "id": "tests_test_decision_contract_api_client",
@@ -861,7 +921,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "api_client()",
       "source_file": "tests/test_decision_contract.py",
@@ -873,7 +933,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "test_agent_deterministic_fallback_message()",
       "source_file": "tests/test_decision_contract.py",
@@ -885,7 +945,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "test_agent_guardrail_rejections()",
       "source_file": "tests/test_decision_contract.py",
@@ -897,7 +957,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "test_fastapi_endpoints()",
       "source_file": "tests/test_decision_contract.py",
@@ -909,7 +969,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "test_pydantic_decision_packet_contract()",
       "source_file": "tests/test_decision_contract.py",
@@ -1028,7 +1088,7 @@
       "label": "DuckDBPyConnection",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "duckdbpyconnection",
       "source_file": "",
@@ -1039,7 +1099,7 @@
       "label": "Exception",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "exception",
       "source_file": "",
@@ -1050,7 +1110,7 @@
       "label": "config.py",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "config.py",
       "source_file": "src/config.py",
@@ -1061,7 +1121,7 @@
       "label": "quality_gates.py",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "quality_gates.py",
       "source_file": "src/data_engineering/quality_gates.py",
@@ -1072,7 +1132,7 @@
       "label": "any",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "any",
       "source_file": "",
@@ -1083,7 +1143,7 @@
       "label": "Path",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "path",
       "source_file": "",
@@ -1094,7 +1154,7 @@
       "label": "transform_medallion.py",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "transform_medallion.py",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -1105,7 +1165,7 @@
       "label": "Path",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "path",
       "source_file": "",
@@ -1116,7 +1176,7 @@
       "label": "test_quality_gates.py",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "code",
       "norm_label": "test_quality_gates.py",
       "source_file": "tests/test_quality_gates.py",
@@ -1127,7 +1187,7 @@
       "label": "GARUDA-NBA System Configuration & Resource Ceiling Parameters. Strictly aligned\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "garuda-nba system configuration & resource ceiling parameters. strictly aligned...",
       "source_file": "src/config.py",
@@ -1138,7 +1198,7 @@
       "label": "Data Quality Gates and Boundary Contract Assertions for GARUDA-NBA. Validates:\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "data quality gates and boundary contract assertions for garuda-nba. validates:...",
       "source_file": "src/data_engineering/quality_gates.py",
@@ -1149,7 +1209,7 @@
       "label": "Raised when a data contract quality gate fails.",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "raised when a data contract quality gate fails.",
       "source_file": "src/data_engineering/quality_gates.py",
@@ -1160,7 +1220,7 @@
       "label": "Execute deterministic quality gates against the Gold feature table. Returns\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "execute deterministic quality gates against the gold feature table. returns...",
       "source_file": "src/data_engineering/quality_gates.py",
@@ -1171,7 +1231,7 @@
       "label": "Medallion Lakehouse Transformation Pipeline (Bronze -> Silver -> Gold). Uses\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "medallion lakehouse transformation pipeline (bronze -> silver -> gold). uses...",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -1182,7 +1242,7 @@
       "label": "Transform Silver stage Parquet into Gold feature store Parquet. Computes\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "transform silver stage parquet into gold feature store parquet. computes...",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -1193,7 +1253,7 @@
       "label": "Execute end-to-end Medallion pipeline (Bronze -> Silver -> Gold).",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "execute end-to-end medallion pipeline (bronze -> silver -> gold).",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -1204,7 +1264,7 @@
       "label": "Create a configured DuckDB connection with strict memory limits.",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "create a configured duckdb connection with strict memory limits.",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -1215,7 +1275,7 @@
       "label": "Transform Bronze raw Parquet into Silver validated stage Parquet. - Cleans data\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "transform bronze raw parquet into silver validated stage parquet. - cleans data...",
       "source_file": "src/data_engineering/transform_medallion.py",
@@ -1226,7 +1286,7 @@
       "label": "Unit Tests for Data Engineering Lakehouse & Quality Gates. Validates: - Bronze\u2026",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "unit tests for data engineering lakehouse & quality gates. validates: - bronze...",
       "source_file": "tests/test_quality_gates.py",
@@ -1237,47 +1297,47 @@
       "label": "Test full pipeline from ingestion to gold feature store.",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "test full pipeline from ingestion to gold feature store.",
       "source_file": "tests/test_quality_gates.py",
       "source_location": "L36"
     },
     {
-      "id": "tests_test_quality_gates_rationale_72",
+      "id": "tests_test_quality_gates_rationale_73",
       "label": "Ensure quality gates fail if duplicate subscriber_id is present.",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "ensure quality gates fail if duplicate subscriber_id is present.",
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L72"
+      "source_location": "L73"
     },
     {
-      "id": "tests_test_quality_gates_rationale_95",
+      "id": "tests_test_quality_gates_rationale_96",
       "label": "Ensure quality gates fail if negative ARPU is present.",
       "_origin": "ast",
       "community": 0,
-      "community_name": "test_quality_gates.py",
+      "community_name": "config.py",
       "file_type": "rationale",
       "norm_label": "ensure quality gates fail if negative arpu is present.",
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L95"
+      "source_location": "L96"
     },
     {
-      "id": "src_data_engineering_ingest",
-      "label": "ingest.py",
+      "id": "src_decisioning_eligibility",
+      "label": "eligibility.py",
       "_origin": "ast",
       "community": 1,
       "community_name": "test_stackelberg_optimizer.py",
       "file_type": "code",
-      "norm_label": "ingest.py",
-      "source_file": "src/data_engineering/ingest.py",
+      "norm_label": "eligibility.py",
+      "source_file": "src/decisioning/eligibility.py",
       "source_location": "L1"
     },
     {
-      "id": "src_data_engineering_ingest_py_dataframe",
+      "id": "src_decisioning_eligibility_py_dataframe",
       "label": "DataFrame",
       "_origin": "ast",
       "community": 1,
@@ -1288,15 +1348,26 @@
       "source_location": ""
     },
     {
-      "id": "src_data_engineering_ingest_py_path",
-      "label": "Path",
+      "id": "src_decisioning_eligibility_py_ndarray",
+      "label": "ndarray",
       "_origin": "ast",
       "community": 1,
       "community_name": "test_stackelberg_optimizer.py",
       "file_type": "code",
-      "norm_label": "path",
+      "norm_label": "ndarray",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "src_modeling_causal_uplift",
+      "label": "causal_uplift.py",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "code",
+      "norm_label": "causal_uplift.py",
+      "source_file": "src/modeling/causal_uplift.py",
+      "source_location": "L1"
     },
     {
       "id": "src_modeling_evaluation",
@@ -1343,6 +1414,17 @@
       "source_location": ""
     },
     {
+      "id": "src_modeling_predictive_risk",
+      "label": "predictive_risk.py",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "code",
+      "norm_label": "predictive_risk.py",
+      "source_file": "src/modeling/predictive_risk.py",
+      "source_location": "L1"
+    },
+    {
       "id": "tests_test_stackelberg_optimizer",
       "label": "test_stackelberg_optimizer.py",
       "_origin": "ast",
@@ -1354,59 +1436,37 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_stackelberg_optimizer_py_fixture",
-      "label": "fixture",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "code",
-      "norm_label": "fixture",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_data_engineering_ingest_rationale_1",
-      "label": "Data Ingestion Module for GARUDA-NBA. Fetches the public Telco Customer Churn\u2026",
+      "id": "src_decisioning_eligibility_rationale_1",
+      "label": "Business, Technical & Behavioral Eligibility Matrix for Retention\u2026",
       "_origin": "ast",
       "community": 1,
       "community_name": "test_stackelberg_optimizer.py",
       "file_type": "rationale",
-      "norm_label": "data ingestion module for garuda-nba. fetches the public telco customer churn...",
-      "source_file": "src/data_engineering/ingest.py",
+      "norm_label": "business, technical & behavioral eligibility matrix for retention...",
+      "source_file": "src/decisioning/eligibility.py",
       "source_location": "L1"
     },
     {
-      "id": "src_data_engineering_ingest_rationale_131",
-      "label": "Attempt downloading raw Parquet dataset from Hugging Face.",
+      "id": "src_decisioning_eligibility_rationale_30",
+      "label": "Evaluate eligibility mask (N x K) and audit reasons for all subscribers.\u2026",
       "_origin": "ast",
       "community": 1,
       "community_name": "test_stackelberg_optimizer.py",
       "file_type": "rationale",
-      "norm_label": "attempt downloading raw parquet dataset from hugging face.",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L131"
+      "norm_label": "evaluate eligibility mask (n x k) and audit reasons for all subscribers....",
+      "source_file": "src/decisioning/eligibility.py",
+      "source_location": "L30"
     },
     {
-      "id": "src_data_engineering_ingest_rationale_152",
-      "label": "Ingest Bronze Parquet dataset with Zstandard compression. Tries public HF\u2026",
+      "id": "src_modeling_causal_uplift_rationale_1",
+      "label": "Multi-Treatment Causal Uplift Engine (T-Learner) with Conformal/Bootstrap LCB.\u2026",
       "_origin": "ast",
       "community": 1,
       "community_name": "test_stackelberg_optimizer.py",
       "file_type": "rationale",
-      "norm_label": "ingest bronze parquet dataset with zstandard compression. tries public hf...",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L152"
-    },
-    {
-      "id": "src_data_engineering_ingest_rationale_33",
-      "label": "Generate calibrated multi-treatment RCT telco telemetry. Mirrors production\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "rationale",
-      "norm_label": "generate calibrated multi-treatment rct telco telemetry. mirrors production...",
-      "source_file": "src/data_engineering/ingest.py",
-      "source_location": "L33"
+      "norm_label": "multi-treatment causal uplift engine (t-learner) with conformal/bootstrap lcb....",
+      "source_file": "src/modeling/causal_uplift.py",
+      "source_location": "L1"
     },
     {
       "id": "src_modeling_evaluation_rationale_1",
@@ -1442,6 +1502,17 @@
       "source_location": "L61"
     },
     {
+      "id": "src_modeling_predictive_risk_rationale_1",
+      "label": "Baseline Churn Risk Classifier & TreeSHAP Feature Attribution. Uses LightGBM\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "test_stackelberg_optimizer.py",
+      "file_type": "rationale",
+      "norm_label": "baseline churn risk classifier & treeshap feature attribution. uses lightgbm...",
+      "source_file": "src/modeling/predictive_risk.py",
+      "source_location": "L1"
+    },
+    {
       "id": "tests_test_stackelberg_optimizer_rationale_1",
       "label": "Unit & Integration Tests for Predictive Risk, Causal Uplift & Stackelberg\u2026",
       "_origin": "ast",
@@ -1451,17 +1522,6 @@
       "norm_label": "unit & integration tests for predictive risk, causal uplift & stackelberg...",
       "source_file": "tests/test_stackelberg_optimizer.py",
       "source_location": "L1"
-    },
-    {
-      "id": "tests_test_stackelberg_optimizer_rationale_35",
-      "label": "Generate consistent 3,000-subscriber cohort for rapid testing.",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "test_stackelberg_optimizer.py",
-      "file_type": "rationale",
-      "norm_label": "generate consistent 3,000-subscriber cohort for rapid testing.",
-      "source_file": "tests/test_stackelberg_optimizer.py",
-      "source_location": "L35"
     },
     {
       "id": "tests_test_stackelberg_optimizer_rationale_45",
@@ -2223,213 +2283,103 @@
       "source_location": "L84"
     },
     {
-      "id": "fastapi",
-      "label": "FastAPI",
+      "id": "src_data_engineering_ingest",
+      "label": "ingest.py",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "fastapi",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "get",
-      "label": "get",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "get",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "post",
-      "label": "post",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "post",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_api_app",
-      "label": "app.py",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "app.py",
-      "source_file": "src/api/app.py",
+      "norm_label": "ingest.py",
+      "source_file": "src/data_engineering/ingest.py",
       "source_location": "L1"
     },
     {
-      "id": "src_decisioning_eligibility",
-      "label": "eligibility.py",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "eligibility.py",
-      "source_file": "src/decisioning/eligibility.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_decisioning_eligibility_py_dataframe",
+      "id": "src_data_engineering_ingest_py_dataframe",
       "label": "DataFrame",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
       "norm_label": "dataframe",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "src_decisioning_eligibility_py_ndarray",
-      "label": "ndarray",
+      "id": "src_data_engineering_ingest_py_path",
+      "label": "Path",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "ndarray",
+      "norm_label": "path",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "src_modeling_causal_uplift",
-      "label": "causal_uplift.py",
+      "id": "tests_test_stackelberg_optimizer_py_fixture",
+      "label": "fixture",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "code",
-      "norm_label": "causal_uplift.py",
-      "source_file": "src/modeling/causal_uplift.py",
+      "norm_label": "fixture",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_data_engineering_ingest_rationale_1",
+      "label": "Data Ingestion Module for GARUDA-NBA. Fetches the public Telco Customer Churn\u2026",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "ingest_bronze",
+      "file_type": "rationale",
+      "norm_label": "data ingestion module for garuda-nba. fetches the public telco customer churn...",
+      "source_file": "src/data_engineering/ingest.py",
       "source_location": "L1"
     },
     {
-      "id": "src_modeling_predictive_risk",
-      "label": "predictive_risk.py",
+      "id": "src_data_engineering_ingest_rationale_131",
+      "label": "Attempt downloading raw Parquet dataset from Hugging Face.",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
-      "file_type": "code",
-      "norm_label": "predictive_risk.py",
-      "source_file": "src/modeling/predictive_risk.py",
-      "source_location": "L1"
+      "community_name": "ingest_bronze",
+      "file_type": "rationale",
+      "norm_label": "attempt downloading raw parquet dataset from hugging face.",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L131"
     },
     {
-      "id": "src_api_app_rationale_1",
-      "label": "FastAPI Production Service for GARUDA-NBA Decision Engine. Exposes low-latency\u2026",
+      "id": "src_data_engineering_ingest_rationale_152",
+      "label": "Ingest Bronze Parquet dataset with Zstandard compression. Tries public HF\u2026",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "rationale",
-      "norm_label": "fastapi production service for garuda-nba decision engine. exposes low-latency...",
-      "source_file": "src/api/app.py",
-      "source_location": "L1"
+      "norm_label": "ingest bronze parquet dataset with zstandard compression. tries public hf...",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L152"
     },
     {
-      "id": "src_api_app_rationale_123",
-      "label": "System health, hardware budget status, and model readiness.",
+      "id": "src_data_engineering_ingest_rationale_33",
+      "label": "Generate calibrated multi-treatment RCT telco telemetry. Mirrors production\u2026",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "rationale",
-      "norm_label": "system health, hardware budget status, and model readiness.",
-      "source_file": "src/api/app.py",
-      "source_location": "L123"
+      "norm_label": "generate calibrated multi-treatment rct telco telemetry. mirrors production...",
+      "source_file": "src/data_engineering/ingest.py",
+      "source_location": "L33"
     },
     {
-      "id": "src_api_app_rationale_144",
-      "label": "Compute individual prescriptive retention decision and agent payload. Latencies\u2026",
+      "id": "tests_test_stackelberg_optimizer_rationale_35",
+      "label": "Generate consistent 3,000-subscriber cohort for rapid testing.",
       "_origin": "ast",
       "community": 18,
-      "community_name": "app.py",
+      "community_name": "ingest_bronze",
       "file_type": "rationale",
-      "norm_label": "compute individual prescriptive retention decision and agent payload. latencies...",
-      "source_file": "src/api/app.py",
-      "source_location": "L144"
-    },
-    {
-      "id": "src_api_app_rationale_243",
-      "label": "Solve Global Stackelberg Knapsack MILP on cohort.",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "solve global stackelberg knapsack milp on cohort.",
-      "source_file": "src/api/app.py",
-      "source_location": "L243"
-    },
-    {
-      "id": "src_api_app_rationale_280",
-      "label": "Compute feature & uplift distribution stability (PSI & KS-test).",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "compute feature & uplift distribution stability (psi & ks-test).",
-      "source_file": "src/api/app.py",
-      "source_location": "L280"
-    },
-    {
-      "id": "src_api_app_rationale_70",
-      "label": "Initialize ML models and gold features on application startup.",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "initialize ml models and gold features on application startup.",
-      "source_file": "src/api/app.py",
-      "source_location": "L70"
-    },
-    {
-      "id": "src_decisioning_eligibility_rationale_1",
-      "label": "Business, Technical & Behavioral Eligibility Matrix for Retention\u2026",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "business, technical & behavioral eligibility matrix for retention...",
-      "source_file": "src/decisioning/eligibility.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_decisioning_eligibility_rationale_30",
-      "label": "Evaluate eligibility mask (N x K) and audit reasons for all subscribers.\u2026",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "evaluate eligibility mask (n x k) and audit reasons for all subscribers....",
-      "source_file": "src/decisioning/eligibility.py",
-      "source_location": "L30"
-    },
-    {
-      "id": "src_modeling_causal_uplift_rationale_1",
-      "label": "Multi-Treatment Causal Uplift Engine (T-Learner) with Conformal/Bootstrap LCB.\u2026",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "multi-treatment causal uplift engine (t-learner) with conformal/bootstrap lcb....",
-      "source_file": "src/modeling/causal_uplift.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_modeling_predictive_risk_rationale_1",
-      "label": "Baseline Churn Risk Classifier & TreeSHAP Feature Attribution. Uses LightGBM\u2026",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "app.py",
-      "file_type": "rationale",
-      "norm_label": "baseline churn risk classifier & treeshap feature attribution. uses lightgbm...",
-      "source_file": "src/modeling/predictive_risk.py",
-      "source_location": "L1"
+      "norm_label": "generate consistent 3,000-subscriber cohort for rapid testing.",
+      "source_file": "tests/test_stackelberg_optimizer.py",
+      "source_location": "L35"
     },
     {
       "id": "src_agentic_init",
@@ -2775,6 +2725,72 @@
       "norm_label": "monitoring & mlops drift governance for garuda-nba.",
       "source_file": "src/monitoring/__init__.py",
       "source_location": "L1"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints",
+      "label": "test_ui_and_endpoints.py",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "code",
+      "norm_label": "test_ui_and_endpoints.py",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_py_fixture",
+      "label": "fixture",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "code",
+      "norm_label": "fixture",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_rationale_1",
+      "label": "Integration & Aesthetic Validation Tests for Dominant-White Swiss Editorial UI.\u2026",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "rationale",
+      "norm_label": "integration & aesthetic validation tests for dominant-white swiss editorial ui....",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_rationale_25",
+      "label": "GET / must return valid 200 HTML console.",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "rationale",
+      "norm_label": "get / must return valid 200 html console.",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_rationale_41",
+      "label": "Strict inspection of Dominant-White Swiss Editorial aesthetic tokens.",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "rationale",
+      "norm_label": "strict inspection of dominant-white swiss editorial aesthetic tokens.",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "tests_test_ui_and_endpoints_rationale_65",
+      "label": "Test full pipeline interaction from UI perspectives.",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "test_ui_and_endpoints.py",
+      "file_type": "rationale",
+      "norm_label": "test full pipeline interaction from ui perspectives.",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L65"
     },
     {
       "id": "src_decisioning_stackelberg_optimizer",
@@ -3188,9 +3204,42 @@
       "label": "BaseModel",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "basemodel",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "fastapi",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "get",
+      "label": "get",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "get",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "post",
+      "label": "post",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "post",
       "source_file": "",
       "source_location": ""
     },
@@ -3199,7 +3248,7 @@
       "label": "retention_agent.py",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "retention_agent.py",
       "source_file": "src/agentic/retention_agent.py",
@@ -3210,10 +3259,21 @@
       "label": "schemas.py",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "schemas.py",
       "source_file": "src/agentic/schemas.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_api_app",
+      "label": "app.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "code",
+      "norm_label": "app.py",
+      "source_file": "src/api/app.py",
       "source_location": "L1"
     },
     {
@@ -3221,7 +3281,7 @@
       "label": "test_decision_contract.py",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "test_decision_contract.py",
       "source_file": "tests/test_decision_contract.py",
@@ -3232,7 +3292,7 @@
       "label": "fixture",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "code",
       "norm_label": "fixture",
       "source_file": "",
@@ -3243,7 +3303,7 @@
       "label": "Autonomous Retention Copilot Agent. Consumes validated DecisionPackets,\u2026",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "autonomous retention copilot agent. consumes validated decisionpackets,...",
       "source_file": "src/agentic/retention_agent.py",
@@ -3254,7 +3314,7 @@
       "label": "Generate high-touch copy via Groq LPU API with strict timeout.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "generate high-touch copy via groq lpu api with strict timeout.",
       "source_file": "src/agentic/retention_agent.py",
@@ -3265,7 +3325,7 @@
       "label": "Enterprise retention copilot with deterministic guardrails and Groq LLM\u2026",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "enterprise retention copilot with deterministic guardrails and groq llm...",
       "source_file": "src/agentic/retention_agent.py",
@@ -3276,7 +3336,7 @@
       "label": "Process DecisionPacket through guardrails and generate intervention payload.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "process decisionpacket through guardrails and generate intervention payload.",
       "source_file": "src/agentic/retention_agent.py",
@@ -3287,7 +3347,7 @@
       "label": "Map recommended action to high-converting touchpoint.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "map recommended action to high-converting touchpoint.",
       "source_file": "src/agentic/retention_agent.py",
@@ -3298,7 +3358,7 @@
       "label": "Deterministic policy generation (0 ms latency, 100% offline reproducible).",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "deterministic policy generation (0 ms latency, 100% offline reproducible).",
       "source_file": "src/agentic/retention_agent.py",
@@ -3309,7 +3369,7 @@
       "label": "Pydantic v2 Contract Schemas for Model-to-Agent Integration. Enforces zero-\u2026",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "pydantic v2 contract schemas for model-to-agent integration. enforces zero-...",
       "source_file": "src/agentic/schemas.py",
@@ -3320,7 +3380,7 @@
       "label": "TreeSHAP feature contribution contract.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "treeshap feature contribution contract.",
       "source_file": "src/agentic/schemas.py",
@@ -3331,7 +3391,7 @@
       "label": "Structured prescriptive output packaging ML metrics and eligibility for agent\u2026",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "structured prescriptive output packaging ml metrics and eligibility for agent...",
       "source_file": "src/agentic/schemas.py",
@@ -3342,7 +3402,7 @@
       "label": "Final personalized dispatch communication payload generated by Retention Agent.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "final personalized dispatch communication payload generated by retention agent.",
       "source_file": "src/agentic/schemas.py",
@@ -3353,7 +3413,7 @@
       "label": "Input payload for scoring a single subscriber.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "input payload for scoring a single subscriber.",
       "source_file": "src/agentic/schemas.py",
@@ -3364,7 +3424,7 @@
       "label": "Request payload for cohort-level campaign optimization.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "request payload for cohort-level campaign optimization.",
       "source_file": "src/agentic/schemas.py",
@@ -3375,18 +3435,95 @@
       "label": "Summary of Stackelberg Knapsack cohort optimization.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "summary of stackelberg knapsack cohort optimization.",
       "source_file": "src/agentic/schemas.py",
       "source_location": "L71"
     },
     {
+      "id": "src_api_app_rationale_1",
+      "label": "FastAPI Production Service for GARUDA-NBA Decision Engine. Exposes low-latency\u2026",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "fastapi production service for garuda-nba decision engine. exposes low-latency...",
+      "source_file": "src/api/app.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_api_app_rationale_125",
+      "label": "Serve the Dominant-White Swiss Editorial Executive Simulator Console UI.",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "serve the dominant-white swiss editorial executive simulator console ui.",
+      "source_file": "src/api/app.py",
+      "source_location": "L125"
+    },
+    {
+      "id": "src_api_app_rationale_135",
+      "label": "System health, hardware budget status, and model readiness.",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "system health, hardware budget status, and model readiness.",
+      "source_file": "src/api/app.py",
+      "source_location": "L135"
+    },
+    {
+      "id": "src_api_app_rationale_156",
+      "label": "Compute individual prescriptive retention decision and agent payload. Latencies\u2026",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "compute individual prescriptive retention decision and agent payload. latencies...",
+      "source_file": "src/api/app.py",
+      "source_location": "L156"
+    },
+    {
+      "id": "src_api_app_rationale_255",
+      "label": "Solve Global Stackelberg Knapsack MILP on cohort.",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "solve global stackelberg knapsack milp on cohort.",
+      "source_file": "src/api/app.py",
+      "source_location": "L255"
+    },
+    {
+      "id": "src_api_app_rationale_292",
+      "label": "Compute feature & uplift distribution stability (PSI & KS-test).",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "compute feature & uplift distribution stability (psi & ks-test).",
+      "source_file": "src/api/app.py",
+      "source_location": "L292"
+    },
+    {
+      "id": "src_api_app_rationale_72",
+      "label": "Initialize ML models and gold features on application startup.",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.py",
+      "file_type": "rationale",
+      "norm_label": "initialize ml models and gold features on application startup.",
+      "source_file": "src/api/app.py",
+      "source_location": "L72"
+    },
+    {
       "id": "tests_test_decision_contract_rationale_1",
       "label": "Integration & Contract Tests for Agentic Decision Layer & FastAPI Service.\u2026",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "integration & contract tests for agentic decision layer & fastapi service....",
       "source_file": "tests/test_decision_contract.py",
@@ -3397,7 +3534,7 @@
       "label": "Verify deterministic Indonesian copy contains driver context.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "verify deterministic indonesian copy contains driver context.",
       "source_file": "tests/test_decision_contract.py",
@@ -3408,7 +3545,7 @@
       "label": "Test full FastAPI service endpoints.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "test full fastapi service endpoints.",
       "source_file": "tests/test_decision_contract.py",
@@ -3419,7 +3556,7 @@
       "label": "Create FastAPI test client with lifespan context.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "create fastapi test client with lifespan context.",
       "source_file": "tests/test_decision_contract.py",
@@ -3430,7 +3567,7 @@
       "label": "Ensure strict validation bounds on DecisionPacket.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "ensure strict validation bounds on decisionpacket.",
       "source_file": "tests/test_decision_contract.py",
@@ -3441,7 +3578,7 @@
       "label": "Test RetentionAgent hard guardrails against Sleeping Dogs and ineligibles.",
       "_origin": "ast",
       "community": 6,
-      "community_name": "RetentionAgent",
+      "community_name": "app.py",
       "file_type": "rationale",
       "norm_label": "test retentionagent hard guardrails against sleeping dogs and ineligibles.",
       "source_file": "tests/test_decision_contract.py",
@@ -3618,7 +3755,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L182",
+      "source_location": "L194",
       "weight": 1.0
     },
     {
@@ -3630,7 +3767,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L124",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -3642,7 +3779,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L79",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -3654,7 +3791,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L80",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -3666,7 +3803,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L97",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -3678,7 +3815,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/api/app.py",
-      "source_location": "L260",
+      "source_location": "L272",
       "weight": 1.0
     },
     {
@@ -4230,7 +4367,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -4242,7 +4379,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L114",
+      "source_location": "L115",
       "weight": 1.0
     },
     {
@@ -4374,7 +4511,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/api/app.py",
-      "source_location": "L142",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -4386,7 +4523,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/api/app.py",
-      "source_location": "L278",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -4398,7 +4535,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/api/app.py",
-      "source_location": "L121",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -4410,7 +4547,19 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/api/app.py",
-      "source_location": "L241",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "src_api_app_serve_dashboard",
+      "target": "get",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "src/api/app.py",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -4435,6 +4584,18 @@
       "context": "decorator",
       "source_file": "tests/test_stackelberg_optimizer.py",
       "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints_client",
+      "target": "tests_test_ui_and_endpoints_py_fixture",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -4626,7 +4787,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -4638,7 +4799,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4650,7 +4811,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4662,7 +4823,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4674,7 +4835,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4686,7 +4847,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4698,7 +4859,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4710,7 +4871,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L50",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -4722,7 +4883,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -4734,7 +4895,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L52",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -4746,7 +4907,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L53",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -4758,7 +4919,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L77",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -4770,7 +4931,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L78",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -5166,7 +5327,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -5178,7 +5339,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -5190,7 +5351,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -5202,7 +5363,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L50",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -5214,7 +5375,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -5226,7 +5387,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L52",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -5238,7 +5399,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/api/app.py",
-      "source_location": "L53",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -5674,6 +5835,18 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_ui_and_endpoints",
+      "target": "src_api_app",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
       "source": "garuda_nba_experiment_1_build_design_matrix",
       "target": "garuda_nba_experiment_1_py_dataframe",
       "relation": "references",
@@ -5790,7 +5963,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/api/app.py",
-      "source_location": "L69",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -6974,13 +7147,24 @@
     },
     {
       "source": "src_api_app",
+      "target": "src_api_app_serve_dashboard",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/api/app.py",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "src_api_app",
       "target": "src_api_app_health_check",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L122",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -6991,7 +7175,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L143",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -7002,7 +7186,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L242",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -7013,7 +7197,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L279",
+      "source_location": "L291",
       "weight": 1.0
     },
     {
@@ -7024,7 +7208,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L28",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -7035,7 +7219,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L69",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -7497,7 +7681,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -7508,7 +7692,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L94",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -7564,6 +7748,50 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_stackelberg_optimizer.py",
       "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints",
+      "target": "tests_test_ui_and_endpoints_client",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints",
+      "target": "tests_test_ui_and_endpoints_test_serve_simulator_html",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints",
+      "target": "tests_test_ui_and_endpoints_test_swiss_editorial_styling_contracts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints",
+      "target": "tests_test_ui_and_endpoints_test_ui_backend_endpoints_functional",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -8084,58 +8312,69 @@
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_123",
+      "source": "src_api_app_rationale_125",
+      "target": "src_api_app_serve_dashboard",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/api/app.py",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "src_api_app_rationale_135",
       "target": "src_api_app_health_check",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L123",
+      "source_location": "L135",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_144",
+      "source": "src_api_app_rationale_156",
       "target": "src_api_app_decide_single_subscriber",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L144",
+      "source_location": "L156",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_243",
+      "source": "src_api_app_rationale_255",
       "target": "src_api_app_optimize_cohort",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L243",
+      "source_location": "L255",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_280",
+      "source": "src_api_app_rationale_292",
       "target": "src_api_app_get_drift_metrics",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L280",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
-      "source": "src_api_app_rationale_70",
+      "source": "src_api_app_rationale_72",
       "target": "src_api_app_lifespan",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/api/app.py",
-      "source_location": "L70",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -8832,25 +9071,25 @@
       "weight": 1.0
     },
     {
-      "source": "tests_test_quality_gates_rationale_72",
+      "source": "tests_test_quality_gates_rationale_73",
       "target": "tests_test_quality_gates_test_quality_gate_detects_duplicates",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L72",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
-      "source": "tests_test_quality_gates_rationale_95",
+      "source": "tests_test_quality_gates_rationale_96",
       "target": "tests_test_quality_gates_test_quality_gate_detects_negative_arpu",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L95",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -8909,6 +9148,50 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_ui_and_endpoints_rationale_1",
+      "target": "tests_test_ui_and_endpoints",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints_rationale_25",
+      "target": "tests_test_ui_and_endpoints_test_serve_simulator_html",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints_rationale_41",
+      "target": "tests_test_ui_and_endpoints_test_swiss_editorial_styling_contracts",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_ui_and_endpoints_rationale_65",
+      "target": "tests_test_ui_and_endpoints_test_ui_backend_endpoints_functional",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_ui_and_endpoints.py",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
       "source": "src_api_app_decide_single_subscriber",
       "target": "src_agentic_schemas_subscriberfeatureinput",
       "relation": "uses",
@@ -8917,7 +9200,7 @@
       "confidence_score": 0.95,
       "context": "parameter_type",
       "source_file": "src/api/app.py",
-      "source_location": "L143",
+      "source_location": "L155",
       "weight": 0.8
     },
     {
@@ -8929,7 +9212,7 @@
       "confidence_score": 0.95,
       "context": "parameter_type",
       "source_file": "src/api/app.py",
-      "source_location": "L242",
+      "source_location": "L254",
       "weight": 0.8
     },
     {
@@ -8962,7 +9245,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L154",
+      "source_location": "L166",
       "weight": 0.8
     },
     {
@@ -8973,7 +9256,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L155",
+      "source_location": "L167",
       "weight": 0.8
     },
     {
@@ -8984,7 +9267,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L156",
+      "source_location": "L168",
       "weight": 0.8
     },
     {
@@ -8995,7 +9278,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L209",
+      "source_location": "L221",
       "weight": 0.8
     },
     {
@@ -9006,7 +9289,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L215",
+      "source_location": "L227",
       "weight": 0.8
     },
     {
@@ -9017,7 +9300,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L86",
+      "source_location": "L88",
       "weight": 0.8
     },
     {
@@ -9028,7 +9311,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L87",
+      "source_location": "L89",
       "weight": 0.8
     },
     {
@@ -9039,7 +9322,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L88",
+      "source_location": "L90",
       "weight": 0.8
     },
     {
@@ -9050,7 +9333,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L89",
+      "source_location": "L91",
       "weight": 0.8
     },
     {
@@ -9061,7 +9344,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L245",
+      "source_location": "L257",
       "weight": 0.8
     },
     {
@@ -9072,7 +9355,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L246",
+      "source_location": "L258",
       "weight": 0.8
     },
     {
@@ -9083,7 +9366,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "src/api/app.py",
-      "source_location": "L265",
+      "source_location": "L277",
       "weight": 0.8
     },
     {
@@ -9094,7 +9377,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L90",
+      "source_location": "L91",
       "weight": 0.8
     },
     {
@@ -9105,10 +9388,10 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "tests/test_quality_gates.py",
-      "source_location": "L113",
+      "source_location": "L114",
       "weight": 0.8
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "73fcfb12ab0f289d6909e28de98acbad189f8913"
+  "built_at_commit": "c16d30eec3e02e6f626b60dc9206773ae41b75d8"
 }

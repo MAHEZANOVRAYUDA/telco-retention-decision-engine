@@ -18,7 +18,9 @@ import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse
+
+TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
 
 try:
     import psutil
@@ -116,6 +118,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/", response_class=HTMLResponse)
+def serve_dashboard():
+    """Serve the Dominant-White Swiss Editorial Executive Simulator Console UI."""
+    index_file = TEMPLATES_DIR / "index.html"
+    if not index_file.exists():
+        raise HTTPException(status_code=404, detail="index.html template not found")
+    with open(index_file, "r", encoding="utf-8") as f:
+        return HTMLResponse(content=f.read(), status_code=200)
 
 
 @app.get("/v1/health")

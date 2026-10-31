@@ -96,10 +96,10 @@
     "semantic_hash": "8beaa30a4be9fbbecb94f87bd6c60de8"
   },
   "tests/test_quality_gates.py": {
-    "mtime": 1793460320.1691644,
-    "seen": 1793460804.345955,
-    "ast_hash": "17749254369d6363192a7fbce8b84aaf",
-    "semantic_hash": "17749254369d6363192a7fbce8b84aaf"
+    "mtime": 1793461580.6684034,
+    "seen": 1793461767.0461533,
+    "ast_hash": "0af7ed39e875386f984b8608a221f0a9",
+    "semantic_hash": ""
   },
   "tests/test_stackelberg_optimizer.py": {
     "mtime": 1793460876.8742187,
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "src/api/app.py": {
-    "mtime": 1793461167.9339426,
-    "seen": 1793461430.6791177,
-    "ast_hash": "2ccfb216380c438a6713be825109f9c3",
+    "mtime": 1793461645.795433,
+    "seen": 1793461767.0461295,
+    "ast_hash": "0775c5ea38671ce5c9913063ac3a60db",
     "semantic_hash": ""
   },
   "tests/test_decision_contract.py": {
@@ -180,39 +180,51 @@
     "semantic_hash": ""
   },
   "tasks/todo.md": {
-    "mtime": 1793461197.818636,
-    "seen": 1793461430.6791513,
-    "ast_hash": "af687b13fc81cda5d8fe5eef7c7fdca4",
+    "mtime": 1793461580.5375874,
+    "seen": 1793461767.0461657,
+    "ast_hash": "a37fe673330a58949116242093303bdc",
     "semantic_hash": ""
   },
   "src/monitoring/__init__.py": {
-    "mtime": 1793461282.1764634,
-    "seen": 1793461430.6791346,
-    "ast_hash": "01d5b859c698bd5ba2bba01205f3bab5",
+    "mtime": 1793461499.8006485,
+    "seen": 1793461767.0461464,
+    "ast_hash": "73e15c33e6d91716d74713747edba3c7",
     "semantic_hash": ""
   },
   "src/monitoring/drift_detector.py": {
-    "mtime": 1793461300.8722253,
-    "seen": 1793461430.6791358,
-    "ast_hash": "65201fdb69fa4bc4c02399d7f7606d1b",
+    "mtime": 1793461499.8442051,
+    "seen": 1793461767.0461476,
+    "ast_hash": "66dab7ad60fc481919d4ef18d48c92b1",
     "semantic_hash": ""
   },
   "src/pipeline.py": {
-    "mtime": 1793461319.350875,
-    "seen": 1793461430.6791365,
-    "ast_hash": "f0deccf011ea3bb14aa9398d6661d80c",
+    "mtime": 1793461499.888675,
+    "seen": 1793461767.0461485,
+    "ast_hash": "498ede33593eb9d92b10f72df52b65d3",
     "semantic_hash": ""
   },
   "tests/test_drift_detector.py": {
-    "mtime": 1793461330.7378342,
-    "seen": 1793461430.67914,
-    "ast_hash": "927c8d5a1dca6acbb2f9e2d9b4fe57b1",
+    "mtime": 1793461499.9889877,
+    "seen": 1793461767.046152,
+    "ast_hash": "c1b8f385ec87ba5e4ef83e76ac13441a",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793461399.3133101,
-    "seen": 1793461430.6791434,
-    "ast_hash": "41b08b872acb1fbffdb95ea88cdeed08",
+    "mtime": 1793461499.750109,
+    "seen": 1793461767.046157,
+    "ast_hash": "df0f3f262c6ab8ba2f4f0e5be2d788c9",
+    "semantic_hash": ""
+  },
+  "tests/test_ui_and_endpoints.py": {
+    "mtime": 1793461712.961259,
+    "seen": 1793461767.0461555,
+    "ast_hash": "31c6db6aadbbee146f9bb501c2a2c835",
+    "semantic_hash": ""
+  },
+  "src/api/templates/index.html": {
+    "mtime": 1793461700.3384507,
+    "seen": 1793461767.0461638,
+    "ast_hash": "f262a2378dc63e233b47f322f2008036",
     "semantic_hash": ""
   }
 }

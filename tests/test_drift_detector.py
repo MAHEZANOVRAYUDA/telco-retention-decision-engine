@@ -82,3 +82,4 @@ def test_end_to_end_pipeline_mlflow(tmp_path):
     assert res["peak_ram_mb"] < 600.0
     assert res["ablation_study"]["advantage"]["sleeping_dogs_eliminated"] >= 0
     assert mlflow_db.exists()
+
