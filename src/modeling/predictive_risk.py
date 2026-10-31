@@ -168,3 +168,4 @@ if __name__ == "__main__":
         metrics = model.evaluate(df_gold)
         sample_drivers = model.explain_drivers(df_gold.iloc[:3], top_k=3)
         print("Sample Drivers for first subscriber:", sample_drivers[0])
+

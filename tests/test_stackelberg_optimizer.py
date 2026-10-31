@@ -130,3 +130,4 @@ def test_eligibility_and_stackelberg_optimizer(sample_gold_data):
 
     ram_current = get_process_ram_mb()
     assert ram_current < 600.0, f"Peak RAM {ram_current:.1f} MB exceeds 600 MB limit"
+

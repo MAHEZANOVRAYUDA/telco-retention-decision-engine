@@ -25,12 +25,13 @@
   - [x] Run `pytest tests/test_stackelberg_optimizer.py` & verify peak RSS < 600 MB (Measured: 277.2 MB on full 20k cohort, Tests: 3/3 passed)
   - [x] Run `graphify` extraction & clustering (`graphify-out/graph.json`: 143 nodes, 219 edges, 14 communities)
 
-- [ ] Tahap 3: Model-to-Agent Consumption Pattern & FastAPI Service
-  - [ ] Create `src/agentic/schemas.py` (Pydantic v2 `FeatureDriver`, `DecisionPacket`, `AgentInterventionResponse`)
-  - [ ] Create `src/agentic/retention_agent.py` (Groq API caller + deterministic structured template fallback + hard guardrails)
-  - [ ] Create `src/api/app.py` (FastAPI with `POST /v1/decide`, `POST /v1/optimize-cohort`, `GET /v1/drift`, `GET /v1/health`)
-  - [ ] Create `tests/test_decision_contract.py`
-  - [ ] Run `pytest tests/test_decision_contract.py`
+- [x] Tahap 3: Model-to-Agent Consumption Pattern & FastAPI Service
+  - [x] Create `src/agentic/schemas.py` (Pydantic v2 `FeatureDriver`, `DecisionPacket`, `AgentInterventionResponse`)
+  - [x] Create `src/agentic/retention_agent.py` (Groq API caller + deterministic structured template fallback + hard guardrails)
+  - [x] Create `src/api/app.py` (FastAPI with `POST /v1/decide`, `POST /v1/optimize-cohort`, `GET /v1/drift`, `GET /v1/health`)
+  - [x] Create `tests/test_decision_contract.py`
+  - [x] Run `pytest tests/test_decision_contract.py` (4/4 passed, total suite 10/10 passed)
+  - [x] Update graphify knowledge graph (`graphify-out/graph.json`: 261 nodes, 404 edges, 22 communities)
 
 - [ ] Tahap 4: MLOps Drift Monitoring, MLflow SQLite & Portfolio Polish
   - [ ] Create `src/monitoring/drift_detector.py` (PSI & KS-test drift detector with `RETRAIN_REQUIRED` signal)
